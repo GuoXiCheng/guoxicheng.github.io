@@ -47,11 +47,11 @@ module.exports = [
     icon: 'reco-category',
     items: [
       { text: 'TinyPNG', link: 'https://tinypng.com' },
-      { text: '阿里巴巴矢量图库', link: 'https://www.iconfont.cn'},
-      { text: 'vuepress-theme-reco', link: 'https://vuepress-theme-reco.recoluan.com'},
       { text: '懒人Excel', link: 'https://www.lanrenexcel.com'},
       { text: 'PPT超级市场', link: 'http://ppt.sotary.com'},
-      { text: 'Swiper中文网', link: 'https://www.swiper.com.cn'}
+      { text: 'Swiper中文网', link: 'https://www.swiper.com.cn'},
+      { text: '阿里巴巴矢量图库', link: 'https://www.iconfont.cn'},
+      { text: 'vuepress-theme-reco', link: 'https://vuepress-theme-reco.recoluan.com'},
     ]
   }
 ]

@@ -47,6 +47,7 @@ module.exports = [
     icon: 'reco-category',
     items: [
       { text: 'TinyPNG', link: 'https://tinypng.com' },
+      { text: '设计模式', link: 'https://refactoringguru.cn'},
       { text: '懒人Excel', link: 'https://www.lanrenexcel.com'},
       { text: 'PPT超级市场', link: 'http://ppt.sotary.com'},
       { text: 'Swiper中文网', link: 'https://www.swiper.com.cn'},

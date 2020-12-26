@@ -1,8 +1,7 @@
 ---
 tags:
 - javascript
-categories:
-- 编程开发
+date: 2020-12-26
 ---
 
 ## javascript

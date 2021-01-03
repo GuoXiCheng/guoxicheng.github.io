@@ -6,8 +6,8 @@ module.exports = [
       { text: 'database', link: '/views/development-language/database.md' },
       { text: 'html&css', link: '/views/development-language/html&css.md' },
       { text: 'java', link: '/views/development-language/java.md' },
-      { text: 'database', link: '/views/development-language/javascript.md' },
-      { text: 'javascript', link: '/views/development-language/python.md' },
+      { text: 'javascript', link: '/views/development-language/javascript.md' },
+      { text: 'python', link: '/views/development-language/python.md' },
       { text: 'wechat', link: '/views/development-language/wechat.md' },
     ]
   },

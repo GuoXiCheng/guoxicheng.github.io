@@ -1,8 +1,8 @@
 const themeConfig = require('./config/theme/')
 
 module.exports = {
-  title: "午后南杂",
-  description: 'Enjoy when you can, and endure when you must.',
+  title: "dream",
+  description: '人的梦想是永远都不会结束的。',
   dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],

@@ -1,7 +1,6 @@
 ---
 tags:
 - javascript
-date: 2020-12-26
 ---
 
 ## javascript

@@ -1,12 +1,11 @@
 # Other
 
-## 停用K8S命名空间下的所有资源
+## 启停K8S命名空间下的所有部署
 
-```bash
+```bash title="停用K8S命名空间下的所有部署副本"
 kubectl scale --replicas=0 deployment --all -n <namespace-name>
 ```
 
-## 启用K8S命名空间下的所有资源
-```bash
+```bash title="启用K8S命名空间下的所有部署副本"
 kubectl scale --replicas=1 deployment --all -n <namespace-name>
 ```

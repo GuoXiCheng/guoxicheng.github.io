@@ -1,4 +1,4 @@
-# argocd的安装与部署
+# Argocd的安装与部署
 
 ## Step 1 安装argocd
 ```bash title="创建命名空间"

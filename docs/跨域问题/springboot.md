@@ -1,3 +1,5 @@
+# springboot 跨域
+
 在Application启动器同目录下新建：CorsConfig
 
 ```java linenums="1"

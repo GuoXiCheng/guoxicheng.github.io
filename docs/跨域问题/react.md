@@ -1,3 +1,5 @@
+# react 跨域
+
 如果要访问的API为：`https://test.com.cn/api/user`
 
 ## 在本地开发环境时

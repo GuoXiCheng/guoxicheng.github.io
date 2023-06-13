@@ -47,3 +47,16 @@ string.replace(/\n|\ +|\\/g, "")
 | .NET (dotnet test line coverage)             | `/Total\s*\|\s*(\d+(?:\.\d+)?)/`                        |
 | tarpaulin (Rust)                             | `/^\d+.\d+% coverage/`                                  |
 | Pester (PowerShell)                          | `/Covered (\d+\.\d+%)/`                                 |
+## Python启用虚拟环境
+
+```bash title="创建虚拟环境"
+python -m venv env
+```
+
+```bash title="激活虚拟环境"
+.\env\Scripts\activate
+```
+
+```bash title="退出虚拟环境"
+deactivate
+```

@@ -3,6 +3,14 @@ theme:
   name: material
   features:
     - content.code.copy
+    - search.highlight
+    - navigation.top
+    # - navigation.tabs
+
+
+plugins:
+  - search:
+      lang: zh
 
 markdown_extensions:
   - pymdownx.highlight:

@@ -5,7 +5,7 @@ theme:
     - content.code.copy
     - search.highlight
     - navigation.top
-    # - navigation.tabs
+    - navigation.tabs
 
 
 plugins:
@@ -13,6 +13,7 @@ plugins:
       lang: zh
 
 markdown_extensions:
+  - attr_list
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

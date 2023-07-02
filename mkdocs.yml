@@ -6,6 +6,7 @@ theme:
     - search.highlight
     - navigation.top
     - navigation.tabs
+    - navigation.footer
 
 
 plugins:

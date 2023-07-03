@@ -3,8 +3,20 @@
 ## 应用后台锁定
 进入「后台管理」，长按「SKIP」，锁定
 
+<figure markdown>
+![Image title](/images/xiaomi-app-backend-lock.jpg){ loading=lazy width="300" }
+</figure>
+
 ## 忽略电池优化
 进入「应用信息」，进入「省电策略」，选择「无限制」
 
+<figure markdown>
+![Image title](/images/xiaomi-ignoring-battery-optimization.jpg){ loading=lazy width="300" }
+</figure>
+
 ## 允许自启动
 进入「应用信息」，打开「自启动」
+
+<figure markdown>
+![Image title](/images/xiaomi-enable-self-start.jpg){ loading=lazy width="300" }
+</figure>

@@ -7,6 +7,8 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.footer
+    - navigation.tabs.sticky
+    - navigation.sections
 
 
 plugins:

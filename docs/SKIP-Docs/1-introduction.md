@@ -3,7 +3,7 @@ SKIP 是一款免费开源的安卓应用，它可以帮助你快速的自动跳
 
 ## v1.3 版本下载
 
-[直接下载 v1.3 ](/static/SKIP-v1.3.apk){ .md-button } 
+[直接下载 v1.3 Beta ](/static/SKIP-v1.3 Beta.apk){ .md-button } 
 
 ## v1.2 版本下载
 

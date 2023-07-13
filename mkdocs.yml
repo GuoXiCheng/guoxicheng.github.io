@@ -6,14 +6,14 @@ theme:
     - search.highlight
     - navigation.top
     - navigation.tabs
-    - navigation.footer
+    # - navigation.footer
     - navigation.tabs.sticky
     - navigation.sections
 
 
 plugins:
   - search:
-      lang: zh
+      lang: en
 
 markdown_extensions:
   - attr_list

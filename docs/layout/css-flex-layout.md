@@ -689,3 +689,200 @@
   }
 </style>
 ```
+
+## align-content
+
+### stretch
+
+### flex-start
+
+### flex-end
+
+### center
+
+### space-between
+
+### space-around
+
+
+## 定义单个项目的属性
+### order
+
+<figure markdown>
+![Image title](/static/css-flex-items-order.png)
+</figure>
+
+```html linenums="1" hl_lines="6"
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item" style="order: -1">5</div>
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    width: 50px;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+</style>
+```
+
+### flex-grow
+
+<figure markdown>
+![Image title](/static/css-flex-items-flex-grow.png)
+</figure>
+
+```html linenums="1" hl_lines="2-4"
+<div class="container">
+  <div class="item" style="flex-grow: 1">1</div>
+  <div class="item" style="flex-grow: 1">2</div>
+  <div class="item" style="flex-grow: 1">3</div>
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    width: 50px;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+</style>
+```
+
+### flex-shrink
+
+<figure markdown>
+![Image title](/static/css-flex-items-flex-shrink.png)
+</figure>
+
+```html linenums="1" hl_lines="2-4"
+<div class="container">
+  <div class="item" style="flex-shrink: 1">1</div>
+  <div class="item" style="flex-shrink: 1">2</div>
+  <div class="item" style="flex-shrink: 1">3</div>
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    width: 500px;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+</style>
+```
+
+### flex-basis
+
+<figure markdown>
+![Image title](/static/css-flex-items-flex-basis.png)
+</figure>
+
+```html linenums="1" hl_lines="2-4"
+<div class="container">
+  <div class="item" style="flex-basis: 100px">1</div>
+  <div class="item" style="flex-basis: 200px">2</div>
+  <div class="item" style="flex-basis: 300px">3</div>
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    width: 50px;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+</style>
+```
+
+### flex
+
+flex 属性是 flex-grow、flex-shrink 以及 flex-basis 的简写形式，默认值为 flex: 0 1 auto。
+
+flex 属性有两个快捷值 ① flex: auto 等价于 flex: 1 1 auto；② flex: none 等价于 flex: 0 0 auto。
+
+建议优先使用该属性而不是单独使用三个分离的属性，因为浏览器会推送相关值。
+
+### align-self
+
+<figure markdown>
+![Image title](/static/css-flex-items-align-self.png)
+</figure>
+
+```html linenums="1" hl_lines="2-4"
+<div class="container">
+  <div class="item" style="align-self: flex-start;">1</div>
+  <div class="item" style="align-self: center">2</div>
+  <div class="item" style="align-self: flex-end">3</div>
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    height: 50%;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    width: 50px;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+</style>
+```

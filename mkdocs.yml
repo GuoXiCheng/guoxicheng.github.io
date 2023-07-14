@@ -1,12 +1,12 @@
 site_name: My Docs
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.copy
     - search.highlight
     - navigation.top
     - navigation.tabs
-    # - navigation.footer
     - navigation.tabs.sticky
     - navigation.sections
 
@@ -28,3 +28,6 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js

@@ -23,7 +23,12 @@
 
 ### row
 
-<iframe src="/layout/test.html"></iframe>
+
+  <div id="app">
+    <div class="container" style="flex-direction: row;">
+      <div class="item" v-for="item in items" :key="item">{{ item }}</div>
+    </div>
+  </div>
 
 <div class="container" style="flex-direction: row;">
   <div class="item">1</div>

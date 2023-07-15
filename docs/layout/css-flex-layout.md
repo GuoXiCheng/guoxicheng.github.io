@@ -23,12 +23,7 @@
 
 ### row
 
-
-  <div id="app">
-    <div class="container" style="flex-direction: row;">
-      <div class="item" v-for="item in items" :key="item">{{ item }}</div>
-    </div>
-  </div>
+<div id="css-flex-flex-direction-row"></div>
 
 <div class="container" style="flex-direction: row;">
   <div class="item">1</div>
@@ -375,8 +370,8 @@
   <div class="item">15</div>
 </div>
 
-
 ## 定义单个项目的属性
+
 ### order
 
 <div class="container" style="display: flex;flex-direction: row;">

@@ -1,7 +1,6 @@
 site_name: My Docs
 theme:
   name: material
-  custom_dir: overrides
   features:
     - content.code.copy
     - search.highlight
@@ -31,3 +30,4 @@ extra_css:
 
 extra_javascript:
   - javascripts/extra.js
+

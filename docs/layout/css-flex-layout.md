@@ -1,45 +1,44 @@
 # CSS Flex Layout
 ## flex-direction
 
-### row
+=== "row"
+    <div class="flex-container" style="flex-direction: row;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: row;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
 
-### row-reverse
+=== "row-reverse"
+    <div class="flex-container" style="flex-direction: row-reverse;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: row-reverse;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+---
 
-### column
+=== "column"
+    <div class="flex-container" style="flex-direction: column;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: column;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
-
-### column-reverse
-
-<div class="flex-container" style="flex-direction: column-reverse;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+=== "column-reverse"
+    <div class="flex-container" style="flex-direction: column-reverse;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
 ## flex-wrap
 
@@ -102,25 +101,6 @@
   <div class="flex-item">14</div>
   <div class="flex-item">15</div>
 </div>
-
-## flex-flow
-
-```html linenums="1" hl_lines="12"
-<style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-</style>
-<!-- 等价于 -->
-<style>
-  .container {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-</style>
-```
 
 ## justify-content
 

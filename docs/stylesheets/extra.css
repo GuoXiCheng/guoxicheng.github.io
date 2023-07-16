@@ -4,6 +4,8 @@
 .flex-container {
     background-color: lightcoral;
     display: flex;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
 }
 .flex-item {
     width: 50px;
@@ -12,11 +14,34 @@
     text-align: center;
     line-height: 50px;
     font-weight: bold;
-    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid gray;
 }
 .flex-auto-height {
     height: auto;
 }
 .flex-auto-width {
     width: auto;
+}
+/**
+    * css-grid-layout styles
+*/
+.grid-container {
+    background-color: lightcoral;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    /* grid-gap: 5px; */
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    height: 200px;
+}
+.grid-item {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid gray;
 }

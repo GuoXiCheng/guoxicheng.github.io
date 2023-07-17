@@ -1,6 +1,8 @@
 # CSS Flex Layout
 ## flex-direction
 
+### row
+
 === "row"
     <div class="flex-container" style="flex-direction: row;">
       <div class="flex-item">1</div>
@@ -20,7 +22,7 @@
       <div class="flex-item">5</div>
     </div>
 
----
+### column
 
 === "column"
     <div class="flex-container" style="flex-direction: column;">
@@ -42,411 +44,390 @@
 
 ## flex-wrap
 
-### nowrap
+=== "nowrap"
+    <div class="flex-container" style="flex-direction: row;flex-wrap: nowrap;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: row;flex-wrap: nowrap;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "wrap"
+    <div class="flex-container" style="flex-direction: row;flex-wrap: wrap;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-### wrap
-
-<div class="flex-container" style="flex-direction: row;flex-wrap: wrap;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
-### wrap-reverse
-
-<div class="flex-container" style="flex-direction: row;flex-wrap: wrap-reverse;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "wrap-reverse"
+    <div class="flex-container" style="flex-direction: row;flex-wrap: wrap-reverse;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
 ## justify-content
 
-### flex-start
+=== "flex-start"
+    <div class="flex-container" style="flex-direction: row;justify-content: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: row;justify-content: flex-start;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+=== "flex-end"
+    <div class="flex-container" style="flex-direction: row;justify-content: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-### flex-end
+=== "center"
+    <div class="flex-container" style="flex-direction: row;justify-content: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="flex-direction: row;justify-content: flex-end;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+=== "space-between"
+    <div class="flex-container" style="flex-direction: row;justify-content: space-between;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-### center
-
-<div class="flex-container" style="flex-direction: row;justify-content: center;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
-
-### space-between
-
-<div class="flex-container" style="flex-direction: row;justify-content: space-between;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
-
-### space-around
-
-<div class="flex-container" style="flex-direction: row;justify-content: space-around;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+=== "space-around"
+    <div class="flex-container" style="flex-direction: row;justify-content: space-around;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
 ## align-items
 
-### stretch
+=== "stretch"
+    <div class="flex-container" style="height: 200px;flex-direction: row;align-items: stretch;">
+      <div class="flex-item flex-auto-height">1</div>
+      <div class="flex-item flex-auto-height">2</div>
+      <div class="flex-item flex-auto-height">3</div>
+      <div class="flex-item flex-auto-height">4</div>
+      <div class="flex-item flex-auto-height">5</div>
+    </div>
 
-<div class="flex-container" style="height: 200px;flex-direction: row;align-items: stretch;">
-  <div class="flex-item flex-auto-height">1</div>
-  <div class="flex-item flex-auto-height">2</div>
-  <div class="flex-item flex-auto-height">3</div>
-  <div class="flex-item flex-auto-height">4</div>
-  <div class="flex-item flex-auto-height">5</div>
-</div>
+=== "flex-start"
+    <div class="flex-container" style="height:200px;flex-direction: row;align-items: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-### flex-start
+=== "flex-end"
+    <div class="flex-container" style="height: 200px;flex-direction: row;align-items: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-<div class="flex-container" style="height:200px;flex-direction: row;align-items: flex-start;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
+=== "center"
+    <div class="flex-container" style="height: 200px;flex-direction: row;align-items: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
 
-### flex-end
-
-<div class="flex-container" style="height: 200px;flex-direction: row;align-items: flex-end;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
-
-### center
-
-<div class="flex-container" style="height: 200px;flex-direction: row;align-items: center;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-</div>
-
-### baseline
-
-<div class="flex-container" style="align-items: baseline;">
-  <div class="flex-item" style="font-size: 50px;">1</div>
-  <div class="flex-item" style="font-size: 10px;">2</div>
-  <div class="flex-item" style="font-size: 40px;">3</div>
-  <div class="flex-item" style="font-size: 5px;">4</div>
-  <div class="flex-item" style="font-size: 30px;">5</div>
-</div>
+=== "baseline"
+    <div class="flex-container" style="align-items: baseline;">
+      <div class="flex-item" style="font-size: 50px;">1</div>
+      <div class="flex-item" style="font-size: 10px;">2</div>
+      <div class="flex-item" style="font-size: 40px;">3</div>
+      <div class="flex-item" style="font-size: 5px;">4</div>
+      <div class="flex-item" style="font-size: 30px;">5</div>
+    </div>
 
 ## align-content
 
-### stretch
+### row wrap
 
-<div class="flex-container" style="height:200px;flex-flow: row wrap;align-content: stretch;">
-  <div class="flex-item flex-auto-height">1</div>
-  <div class="flex-item flex-auto-height">2</div>
-  <div class="flex-item flex-auto-height">3</div>
-  <div class="flex-item flex-auto-height">4</div>
-  <div class="flex-item flex-auto-height">5</div>
-  <div class="flex-item flex-auto-height">6</div>
-  <div class="flex-item flex-auto-height">7</div>
-  <div class="flex-item flex-auto-height">8</div>
-  <div class="flex-item flex-auto-height">9</div>
-  <div class="flex-item flex-auto-height">10</div>
-  <div class="flex-item flex-auto-height">11</div>
-  <div class="flex-item flex-auto-height">12</div>
-  <div class="flex-item flex-auto-height">13</div>
-  <div class="flex-item flex-auto-height">14</div>
-  <div class="flex-item flex-auto-height">15</div>
-</div>
+=== "stretch"
+    <div class="flex-container" style="height:200px;flex-flow: row wrap;align-content: stretch;">
+      <div class="flex-item flex-auto-height">1</div>
+      <div class="flex-item flex-auto-height">2</div>
+      <div class="flex-item flex-auto-height">3</div>
+      <div class="flex-item flex-auto-height">4</div>
+      <div class="flex-item flex-auto-height">5</div>
+      <div class="flex-item flex-auto-height">6</div>
+      <div class="flex-item flex-auto-height">7</div>
+      <div class="flex-item flex-auto-height">8</div>
+      <div class="flex-item flex-auto-height">9</div>
+      <div class="flex-item flex-auto-height">10</div>
+      <div class="flex-item flex-auto-height">11</div>
+      <div class="flex-item flex-auto-height">12</div>
+      <div class="flex-item flex-auto-height">13</div>
+      <div class="flex-item flex-auto-height">14</div>
+      <div class="flex-item flex-auto-height">15</div>
+    </div>
 
----
+=== "flex-start"
+    <div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: stretch;">
-  <div class="flex-item flex-auto-width">1</div>
-  <div class="flex-item flex-auto-width">2</div>
-  <div class="flex-item flex-auto-width">3</div>
-  <div class="flex-item flex-auto-width">4</div>
-  <div class="flex-item flex-auto-width">5</div>
-  <div class="flex-item flex-auto-width">6</div>
-  <div class="flex-item flex-auto-width">7</div>
-  <div class="flex-item flex-auto-width">8</div>
-  <div class="flex-item flex-auto-width">9</div>
-  <div class="flex-item flex-auto-width">10</div>
-  <div class="flex-item flex-auto-width">11</div>
-  <div class="flex-item flex-auto-width">12</div>
-  <div class="flex-item flex-auto-width">13</div>
-  <div class="flex-item flex-auto-width">14</div>
-  <div class="flex-item flex-auto-width">15</div>
-</div>
+=== "flex-end"
+    <div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-### flex-start
+=== "center"
+    <div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-<div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: flex-start;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "space-between"
+    <div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: space-between;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
+  
+=== "space-around"
+    <div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: space-around;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
----
+### column wrap
 
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: flex-start;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "stretch"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: stretch;">
+      <div class="flex-item flex-auto-width">1</div>
+      <div class="flex-item flex-auto-width">2</div>
+      <div class="flex-item flex-auto-width">3</div>
+      <div class="flex-item flex-auto-width">4</div>
+      <div class="flex-item flex-auto-width">5</div>
+      <div class="flex-item flex-auto-width">6</div>
+      <div class="flex-item flex-auto-width">7</div>
+      <div class="flex-item flex-auto-width">8</div>
+      <div class="flex-item flex-auto-width">9</div>
+      <div class="flex-item flex-auto-width">10</div>
+      <div class="flex-item flex-auto-width">11</div>
+      <div class="flex-item flex-auto-width">12</div>
+      <div class="flex-item flex-auto-width">13</div>
+      <div class="flex-item flex-auto-width">14</div>
+      <div class="flex-item flex-auto-width">15</div>
+    </div>
 
-### flex-end
+=== "flex-start"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-<div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: flex-end;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "flex-end"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
----
+=== "center"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: flex-end;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "space-between"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: space-between;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
-### center
-
-<div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: center;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
----
-
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: center;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
-### space-between
-
-<div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: space-between;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
----
-
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: space-between;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
-### space-around
-
-<div class="flex-container" style="height: 200px;flex-flow: row wrap;align-content: space-around;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
-
----
-
-<div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: space-around;">
-  <div class="flex-item">1</div>
-  <div class="flex-item">2</div>
-  <div class="flex-item">3</div>
-  <div class="flex-item">4</div>
-  <div class="flex-item">5</div>
-  <div class="flex-item">6</div>
-  <div class="flex-item">7</div>
-  <div class="flex-item">8</div>
-  <div class="flex-item">9</div>
-  <div class="flex-item">10</div>
-  <div class="flex-item">11</div>
-  <div class="flex-item">12</div>
-  <div class="flex-item">13</div>
-  <div class="flex-item">14</div>
-  <div class="flex-item">15</div>
-</div>
+=== "space-around"
+    <div class="flex-container" style="height: 200px;flex-flow: column wrap;align-content: space-around;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
 
 ## 定义单个项目的属性
 

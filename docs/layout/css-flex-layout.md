@@ -179,9 +179,10 @@
       <div class="flex-item">5</div>
     </div>
 
-## align-items
+## align-items 决定交叉轴对齐方式
 
-=== "stretch"
+=== "stretch（默认值）"
+    项目被拉伸以填充整个交叉轴。
     <div class="flex-container" style="height: 200px;flex-direction: row;align-items: stretch;">
       <div class="flex-item flex-auto-height">1</div>
       <div class="flex-item flex-auto-height">2</div>
@@ -191,6 +192,7 @@
     </div>
 
 === "flex-start"
+    项目在交叉轴起始端对齐。
     <div class="flex-container" style="height:200px;flex-direction: row;align-items: flex-start;">
       <div class="flex-item">1</div>
       <div class="flex-item">2</div>
@@ -200,6 +202,7 @@
     </div>
 
 === "flex-end"
+    项目在交叉轴末尾端对齐。
     <div class="flex-container" style="height: 200px;flex-direction: row;align-items: flex-end;">
       <div class="flex-item">1</div>
       <div class="flex-item">2</div>
@@ -209,6 +212,7 @@
     </div>
 
 === "center"
+    项目在交叉轴中心对齐。
     <div class="flex-container" style="height: 200px;flex-direction: row;align-items: center;">
       <div class="flex-item">1</div>
       <div class="flex-item">2</div>
@@ -218,6 +222,7 @@
     </div>
 
 === "baseline"
+    项目在交叉轴上以基线对齐（以项目的基线对齐）。
     <div class="flex-container" style="align-items: baseline;">
       <div class="flex-item" style="font-size: 50px;">1</div>
       <div class="flex-item" style="font-size: 10px;">2</div>
@@ -226,7 +231,7 @@
       <div class="flex-item" style="font-size: 30px;">5</div>
     </div>
 
-## align-content
+##  align-content 决定整个容器在交叉轴的对齐方式
 
 ### row wrap
 

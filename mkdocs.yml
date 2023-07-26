@@ -4,6 +4,8 @@ theme:
   features:
     # 复制到剪贴板按钮
     - content.code.copy
+    # 代码注释
+    - content.code.annotate
     # 启用搜索突出显示功能
     - search.highlight
     # navigation.top

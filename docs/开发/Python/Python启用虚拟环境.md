@@ -1,6 +1,4 @@
 
-## Python启用虚拟环境
-
 ```bash title="创建虚拟环境"
 python -m venv env
 ```

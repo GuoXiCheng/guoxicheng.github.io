@@ -1,6 +1,7 @@
 site_name: My Docs
 theme:
   name: material
+  # custom_dir: overrides
   features:
     # 复制到剪贴板按钮
     - content.code.copy

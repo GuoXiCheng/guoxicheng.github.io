@@ -1,4 +1,4 @@
-# react 跨域
+# react
 
 如果要访问的API为：`https://test.com.cn/api/user`
 

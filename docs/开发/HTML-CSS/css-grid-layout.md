@@ -1,4 +1,4 @@
-# CSS Grid Layout
+# Grid Layout
 
 ## justify-content
 

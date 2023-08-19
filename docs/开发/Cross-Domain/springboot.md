@@ -1,4 +1,4 @@
-# springboot 跨域
+# springboot
 
 在Application启动器同目录下新建：CorsConfig
 

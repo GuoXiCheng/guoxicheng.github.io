@@ -1,4 +1,4 @@
-# django 跨域
+# django
 ## 安装
 
 ```bash

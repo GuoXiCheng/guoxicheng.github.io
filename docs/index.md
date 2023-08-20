@@ -1,20 +1,16 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Home
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| 项目名称           | 描述                                        |
+| -----------       | ------------------------------------        |
+| [个人主页](https://github.com/GuoXiCheng/guoxicheng.github.io)| 本站源码地址 |
+| [SKIP](https://github.com/GuoXiCheng/SKIP) | 可以帮助用户自动跳过APP开屏广告的Android APP  |
+| [angular-sandbox](https://github.com/GuoXiCheng/angular-sandbox) | Angular组件练习沙盒环境  [预览](https://guoxicheng.top/angular-sandbox/)|
+| [AnyToAnki](https://github.com/GuoXiCheng/AnyToAnki)| 将文档内容转为Anki卡片的插件 |
 
 
-[ Angular Sandbox](https://guoxicheng.github.io/angular-sandbox/){ .md-button } 

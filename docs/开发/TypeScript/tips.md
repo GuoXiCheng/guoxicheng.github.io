@@ -55,13 +55,6 @@ const obj = { id: 1, name: 'test', age: 10 };
 JSON.stringify(obj, null, 2);
 ```
 
-## 数组深拷贝
-
-```ts
-const arr = [1, 2, 3, 4, 5];
-const copyArr = [...arr];
-```
-
 ## 合并多个对象
 
 合并后的对象中的键将唯一存在，后者合并的值将会覆盖已存在的键的值。

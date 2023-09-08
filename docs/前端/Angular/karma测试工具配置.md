@@ -1,4 +1,6 @@
-```js linenums="1"
+在window平台下运行时使用Chrome，在其他平台下使用ChromeNoSandboxHeadless
+
+```js linenums="1" hl_lines="40"
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
@@ -38,8 +40,8 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeNoSandboxHeadless'],
-    singleRun: true,
+    browsers: process.platform === 'win32' ? ['Chrome'] : ['ChromeNoSandboxHeadless'],,
+    singleRun: false,
     restartOnFileChange: true,
     customLaunchers: {
       ChromeNoSandboxHeadless: {

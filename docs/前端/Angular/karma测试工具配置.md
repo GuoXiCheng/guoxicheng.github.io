@@ -40,7 +40,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: process.platform === 'win32' ? ['Chrome'] : ['ChromeNoSandboxHeadless'],,
+    browsers: process.platform === 'win32' ? ['Chrome'] : ['ChromeNoSandboxHeadless'],
     singleRun: false,
     restartOnFileChange: true,
     customLaunchers: {

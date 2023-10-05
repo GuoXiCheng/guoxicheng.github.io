@@ -12,6 +12,10 @@ SKIP 是一款免费开源的安卓应用，旨在利用 Android 无障碍服务
 ![Image title](/static/skip-docs/main-interface.jpg){ width="300" }
 </figure>
 
+## v1.3.1 版本下载
+
+[直接下载 v1.3.1](/static/skip-docs/SKIP-v1.3.1.apk){ .md-button } 
+
 ## v1.3 版本下载
 
 [直接下载 v1.3](https://github.com/GuoXiCheng/SKIP/releases/download/v1.3/SKIP-v1.3.apk){ .md-button } 

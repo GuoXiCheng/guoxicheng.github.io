@@ -1,0 +1,6 @@
+# typeof和instanceof
+typeof和instanceof都是用于检测数据类型的操作符。
+
+typeof适用于检测基本数据类型，返回的是数据类型的字符串。对于引用类型，除了函数能被识别为function外，其余的数组、对象和null，都会被识别为object。
+
+instanceof适用于检测引用类型，它会检查实例对象的原型链上是否存在指定构造函数的prototype属性，返回的是一个布尔值。

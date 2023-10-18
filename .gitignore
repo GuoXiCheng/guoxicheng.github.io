@@ -1,2 +1,4 @@
-env
-site
+node_modules
+.temp
+.cache
+dist

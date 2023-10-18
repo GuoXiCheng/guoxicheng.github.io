@@ -22,7 +22,9 @@ jobs:
       run: |
         npm install
         npm run docs:build
-
+    - name: Copy to deploy 
+      run: |
+        cp src/CNAME src/.vuepress/dist/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:

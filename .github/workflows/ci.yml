@@ -1,25 +1,30 @@
-name: ci 
+name: Deploy VuePress site
+
 on:
   push:
     branches:
       - master 
       - main
-permissions:
-  contents: write
+
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v3
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Setup Node
+      uses: actions/setup-node@master
+      with:
+        node-version: '14.x'
+
+    - name: Install and Build 
+      run: |
+        npm install
+        npm run docs:build
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: src/.vuepress/dist

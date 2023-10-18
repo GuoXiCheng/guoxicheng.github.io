@@ -1,0 +1,8 @@
+# 什么是JavaScript
+JavaScript起初是用于网页客户端中的数据验证。完整的JavaScript包含：ECMAScript、DOM和BOM。
+
+ECMAScript是一种脚本语言的标准规范，JavaScript是基于ECMAScript的一种具体实现，用于在Web浏览器中执行。
+
+DOM提供操作网页内容的接口和方法。
+
+BOM提供操作浏览器窗口的接口和方法。

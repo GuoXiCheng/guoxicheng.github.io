@@ -16,8 +16,8 @@ export default defineUserConfig({
     //   exclude: ['guide', 'demo', 'reading'],
     //   excludeReadme: true
     // })
-  ]
+  ],
 
   // Enable it with pwa
-  // shouldPrefetch: false,
+  shouldPrefetch: false,
 });

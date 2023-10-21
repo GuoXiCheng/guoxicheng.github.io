@@ -90,7 +90,7 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
+      vuePlayground: true
     },
 
     pwa: {

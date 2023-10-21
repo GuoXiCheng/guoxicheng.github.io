@@ -4,8 +4,8 @@ icon: home
 title: 项目主页
 heroImage: /logo.svg
 heroFullScreen: true
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+bgImage: /assets/image/bg/6-light.svg
+bgImageDark: /assets/image/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: 项目名称
@@ -22,8 +22,8 @@ highlights:
   - header: SKIP
     description: 自动跳过APP开屏广告<p><img alt="GitHub" src="https://img.shields.io/github/license/GuoXiCheng/SKIP"/> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total"/> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP"/> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg"/></a></p>
     image: /assets/image/skip-docs/skip-icon.png
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    bgImage: /assets/image/bg/2-light.svg
+    bgImageDark: /assets/image/bg/2-dark.svg
     highlights:
       - title: SKIP介绍
         icon: download
@@ -33,12 +33,17 @@ highlights:
       - title: 使用方法介绍
         icon: robot
         details: 启用无障碍服务
-        link: /projects/SKIP-Docs/how-to-use.html
+        link: /projects/SKIP-Docs/001-how-to-use.html
 
       - title: 小米后台保活
         icon: mobile-screen
         details: 如何保证软件在后台稳定运行
-        link: /projects/SKIP-Docs/xiaomi.html
+        link: /projects/SKIP-Docs/002-xiaomi.html
+      
+      - title: 贡献指南
+        icon: location-arrow
+        details: 实现原理、核心逻辑以及如何配置
+        link: /projects/SKIP-Docs/003-contribute.html
 
   # - header: 易于安装
   #   image: /assets/image/box.svg

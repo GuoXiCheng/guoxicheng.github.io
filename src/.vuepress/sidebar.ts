@@ -6,7 +6,8 @@ export default sidebar({
   "/projects": "structure",
   "/cloud-native": "structure",
   "/design-pattern": "structure",
-  "/develop": "structure"
+  "/develop": "structure",
+  "/algorithm": "structure"
   // "/": [
   //   "",
   //   {

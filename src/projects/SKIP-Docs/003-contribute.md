@@ -36,17 +36,17 @@ graph
 设置为0时，即使查询到指定节点，也不执行点击动作。
 
 ### skip_text <Badge text="选填" type="tip" vertical="middle" />
-根据文本匹配，当节点文本包含指定字符串时，执行点击动作。
+根据文本匹配，当节点的文本**包含**指定字符串时，执行点击动作。
 
 在手机屏幕上看到的文本是什么就可以填什么，但是实际节点text为null时，会失效。
 
 ### skip_id <Badge text="选填" type="tip" vertical="middle" />
-根据id匹配，当查询到指定id的节点时，执行点击动作。
+根据id匹配，当节点的id**包含**指定字符串时，执行点击动作。
 
 id需要使用**Android布局分析工具**查询，但实际节点id为null时，不可用。
 
 ### skip_bounds <Badge text="选填" type="tip" vertical="middle" />
-根据bounds匹配，当节点的bounds处于所设定的范围内时，执行点击动作。
+根据bounds匹配，当所设定的bounds**包含**节点的bounds是，执行点击动作。
 
 一般可交互的节点都会具有bounds，需要使用**Android布局分析工具**查询，`skip_bounds`可以配置多个。
 

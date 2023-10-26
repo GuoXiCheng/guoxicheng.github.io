@@ -46,10 +46,40 @@ graph
 id需要使用**Android布局分析工具**查询，但实际节点id为null时，不可用。
 
 ### skip_bounds <Badge text="选填" type="tip" vertical="middle" />
-根据bounds匹配，当所设定的bounds**包含**节点的bounds是，执行点击动作。
+根据bounds匹配，当所设定的bounds**包含**节点的bounds时，执行点击动作。
 
 一般可交互的节点都会具有bounds，需要使用**Android布局分析工具**查询，`skip_bounds`可以配置多个。
 
 ## Android布局分析工具
 
 我使用的是：[web-editor](https://github.com/alibaba/web-editor)，使用Android Studio自带的或其他工具也一样，只要可以探查屏幕节点的布局结构即可。
+
+### 应用布局参考图
+
+当你选中想要的目标节点时，会显示该节点的布局结构，参考如下：
+
+![应用布局参考图](/assets/image/skip-docs/layout-reference.png =300x)
+
+### 配置skip_text和skip_id
+
+`text`呈现的值，可以对应到配置文件中的`skip_text`
+
+`resourceId`呈现的值，可以对应到配置文件中的`skip_id`
+
+### 配置skip_bounds
+skip_bounds的值是需要计算得到的，skip_bounds的值可能长得像这样
+```
+1440,3024#1067,230,1195,274
+```
+其中的1440,3024是你当前手机屏幕的最大宽高，可以在SKIP-v1.4版本的主界面查看到：
+
+主要作用是将设定中的bounds按比例转换为当前屏幕适配的bounds。
+
+![SKIP页脚](/assets/image/skip-docs/skip-bottom-screenshot.jpg =300x)
+
+其中的1067,230,1195,274分别表示一个节点在屏幕中的: left,top,right,bottom
+
+参考上图中rect的信息: left=x,top=y,right=x+width,bottom=y+height
+
+![SKIP页脚](/assets/image/skip-docs/android-rect.png =300x)
+

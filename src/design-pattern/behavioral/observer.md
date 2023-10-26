@@ -1,6 +1,6 @@
 # 观察者模式
 
-::: playground#ts 观察者交互演示
+::: playground#ts 观察者模式交互演示
 
 @file index.ts
 

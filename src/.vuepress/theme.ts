@@ -95,11 +95,10 @@ export default hopeTheme({
 
     pwa: {
       favicon: "/favicon.ico",
-      cacheHTML: false,
+      cacheHTML: true,
       cachePic: true,
       appendBase: true,
       themeColor: "#000000",
-      update: 'force',
       apple: {
         icon: "/assets/icon/apple-icon-152.png",
         statusBarColor: "black",

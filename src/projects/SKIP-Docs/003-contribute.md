@@ -81,5 +81,5 @@ skip_bounds的值是需要计算得到的，skip_bounds的值可能长得像这�
 
 参考上图中rect的信息: left=x,top=y,right=x+width,bottom=y+height
 
-![SKIP页脚](/assets/image/skip-docs/android-rect.png =300x)
+![Android屏幕节点布局](/assets/image/skip-docs/android-rect.png =300x)
 

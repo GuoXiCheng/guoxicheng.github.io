@@ -20,7 +20,8 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  // navbar
+  docsBranch: "master",
+
   navbar,
 
   sidebar,

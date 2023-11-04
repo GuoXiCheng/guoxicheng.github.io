@@ -14,7 +14,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/avatar.png",
+  logo: "/logo.png",
 
   repo: "GuoXiCheng/guoxicheng.github.io",
 
@@ -101,14 +101,6 @@ export default hopeTheme({
       appendBase: true,
       themeColor: "#000000",
       update: "available",
-      apple: {
-        icon: "/assets/icon/apple-icon-152.png",
-        statusBarColor: "black",
-      },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
-      },
       manifest: {
         icons: [
           {

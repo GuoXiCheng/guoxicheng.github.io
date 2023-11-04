@@ -2,21 +2,21 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: /logo.svg
+heroImage: /logo.png
 heroFullScreen: true
-bgImage: /assets/image/bg/6-light.svg
-bgImageDark: /assets/image/bg/6-dark.svg
+bgImage: /assets/image/bg/2-light.svg
+bgImageDark: /assets/image/bg/2-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: 项目名称
-tagline: 你可以在这里放置或是整个项目的描述。
-# actions:
-#   - text: 使用指南 💡
-#     link: ./demo/
-#     type: primary
+heroText: Guo's Page
+tagline: Eat, Code, Sleep, Repeat
+actions:
+  - text: Get Started 💡
+    link: /projects/SKIP-Docs/
+    type: primary
 
-#   - text: 文档
-#     link: ./guide/
+  # - text: 文档
+  #   link: ./guide/
 
 highlights:
   - header: SKIP

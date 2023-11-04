@@ -14,7 +14,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/logo.svg",
+  logo: "/avatar.png",
 
   repo: "GuoXiCheng/guoxicheng.github.io",
 

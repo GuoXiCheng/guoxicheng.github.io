@@ -86,3 +86,84 @@ clientNode("空运");
 ```
 
 :::
+
+## 业务场景类比
+
+使用工厂方法模式开发跨平台的UI组件，同时避免客户端代码与具体UI类之间的耦合。
+
+::: playground#ts 工厂方法模式交互演示
+
+@file index.ts
+
+```ts
+interface Button {
+    render(): string;
+    onClick(): string;
+}
+
+class WindowsButton implements Button {
+    render(): string {
+        return "render windows button";
+    }
+
+    onClick(): string {
+        return "click windows button";
+    }
+}
+
+class MacButton implements Button {
+    render(): string {
+        return "render mac button";
+    }
+
+    onClick(): string {
+        return "click mac button";
+    }
+}
+
+abstract class Dialog {
+    public abstract createButton(): Button;
+
+    public renderButton() {
+        const button = this.createButton();
+        const renderResult = button.render();
+        console.log(renderResult);
+
+        const clickedResult = button.onClick();
+        console.log(clickedResult);
+    }
+}
+
+class WindowsDialog extends Dialog {
+    public createButton(): Button {
+        return new WindowsButton();
+    }
+}
+
+class MacDialog extends Dialog {
+    public createButton(): Button {
+        return new MacButton();
+    }
+}
+
+function clientNode(os: "win" | "mac") {
+    let dialog;
+    switch(os) {
+        case "win":
+            dialog = new WindowsDialog();
+            break;
+        case "mac":
+            dialog = new MacDialog();
+            break;
+        default:
+            throw new Error();
+    }
+    dialog.renderButton();
+}
+
+clientNode("win");
+
+clientNode("mac");
+```
+
+:::

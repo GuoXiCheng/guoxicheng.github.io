@@ -1,99 +1,91 @@
 ---
 order: 1
 ---
+
 # 工厂方法模式
 
 ## 真实世界类比
 
-假设有一物流公司，一开始只做陆地运输，后来随着业务的发展，开始做空运、海运等运输方式。
-
-::: playground#ts 工厂方法模式交互演示
-
-@file index.ts
+假设你要去菜鸟驿站寄快递，你可以选择京东快递、顺丰快递、中通快递等，并且这个菜鸟驿站后续可能还会有其他快递公司入驻。
 
 ```ts
-interface Transport {
-    deliver(): string;
+interface ExpressService {
+    delivery(): string;
 }
 
-class LandTransport implements Transport {
-    deliver(): string {
-        return "陆地运输";
+class JDExpress implements ExpressService {
+    delivery(): string {
+        return "京东快递";
+    }
+
+}
+
+class SFExpress implements ExpressService {
+    delivery(): string {
+        return "顺丰快递";
+    }
+
+}
+
+class ZTExpress implements ExpressService {
+    delivery(): string {
+        return "中通快递";
+    }
+
+}
+
+abstract class CainiaoYizhanExpressService {
+    public abstract createExpress(): ExpressService;
+
+    public expressDelivery() {
+        const express = this.createExpress();
+        console.log(`我要寄出: ${express.delivery()}`);
     }
 }
 
-class SeaTransport implements Transport {
-    deliver(): string {
-        return "海上运输";
+class JDExpressService extends CainiaoYizhanExpressService {
+    public createExpress(): ExpressService {
+        return new JDExpress();
     }
 }
 
-class AirTransport implements Transport {
-    deliver(): string {
-        return "航空运输";
+class SFExpressService extends CainiaoYizhanExpressService {
+    public createExpress(): ExpressService {
+        return new SFExpress();
     }
 }
 
-abstract class LogisticsFactory {
-    public abstract createTransport(): Transport;
-
-    public planDelivery() {
-        const transport = this.createTransport();
-        return transport.deliver(); 
+class ZTExpressService extends CainiaoYizhanExpressService {
+    public createExpress(): ExpressService {
+        return new ZTExpress();
     }
 }
 
-class LandFactory extends LogisticsFactory {
-    public createTransport(): Transport {
-        return new LandTransport();
-    }
-}
-
-class SeaFactory extends LogisticsFactory {
-    public createTransport(): Transport {
-        return new SeaTransport();
-    }
-}
-
-class AirFactory extends LogisticsFactory {
-    public createTransport(): Transport {
-        return new AirTransport();
-    }
-}
-
-function clientNode(transportMode: "陆运" | "海运" | "空运") {
-    let transport;
-    switch(transportMode) {
-        case "陆运":
-            transport = new LandFactory();
+function clientNode(express: "京东" | "顺丰" | "中通") {
+    let expressService: CainiaoYizhanExpressService;
+    switch(express) {
+        case "京东":
+            expressService = new JDExpressService();
             break;
-        case "海运":
-            transport = new SeaFactory();
+        case "顺丰":
+            expressService = new SFExpressService();
             break;
-        case "空运":
-            transport = new AirFactory();
+        case "中通":
+            expressService = new ZTExpressService();
             break;
         default:
             throw new Error();
     }
-    const result = transport.planDelivery();
-    console.log(result);
+    expressService.expressDelivery();
 }
 
-clientNode("陆运");
-clientNode("海运");
-clientNode("空运");
+clientNode("京东");
 ```
 
-:::
 
 ## 业务场景类比
 
 使用工厂方法模式开发跨平台的UI组件，同时避免客户端代码与具体UI类之间的耦合。
-
-::: playground#ts 工厂方法模式交互演示
-
-@file index.ts
 
 ```ts
 interface Button {
@@ -165,5 +157,3 @@ clientNode("win");
 
 clientNode("mac");
 ```
-
-:::

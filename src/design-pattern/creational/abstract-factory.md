@@ -3,89 +3,91 @@ order: 2
 ---
 # 抽象工厂模式
 
+## 真实世界类比
 
-::: playground#ts 抽象工厂模式交互演示
+假设你要去开通88VIP服务，有生活卡、购物卡和全能卡三种套餐供你选择，生活卡包含视频会员权益，购物卡包含天天红包权益，全能卡包含生活卡和购物卡的所有权益。
 
-@file index.ts
 
 ```ts
-interface AbstractFactory {
-    createProductA(): AbstractProductA;
+interface VIPCard {
+    createLifeService(): AbstractLifeService;
 
-    createProductB(): AbstractProductB;
+    createShoppingService(): AbstractShoppingService;
 }
 
-class ConcreteFactory1 implements AbstractFactory {
-    createProductA() {
-        return new ConcreteProductA1();
+class LifeCardVIP implements VIPCard {
+    createLifeService() {
+        return new LifeService();
     }
-    createProductB() {
-        return new ConcreteProductB1();
-    }
-}
-
-class ConcreteFactory2 implements AbstractFactory {
-    createProductA() {
-        return new ConcreteProductA2();
-    }
-    createProductB() {
-        return new ConcreteProductB2();
-    }
-
-}
-
-interface AbstractProductA {
-    usefulFunctionA(): string;
-}
-
-class ConcreteProductA1 implements AbstractProductA {
-    usefulFunctionA(): string {
-        return "useful result of product A1";
+    createShoppingService() {
+        return new NoShoppingService();
     }
 }
 
-class ConcreteProductA2 implements AbstractProductA {
-    usefulFunctionA(): string {
-        return "useful result of product A2";
+class ShoppingCardVIP implements VIPCard {
+    createLifeService() {
+        return new NoLifeService();
+    }
+    createShoppingService() {
+        return new ShoppingService();
     }
 }
 
-interface AbstractProductB {
-    usefulFunctionB(): string;
-
-    anthorUsefulFunctionB(collaborator: AbstractProductA): string;
-}
-
-class ConcreteProductB1 implements AbstractProductB {
-    usefulFunctionB(): string {
-        return "useful result of product B1";
+class AllInOneCardVIP implements VIPCard {
+    createLifeService() {
+        return new LifeService();
     }
-    anthorUsefulFunctionB(collaborator: AbstractProductA): string {
-        const result = collaborator.usefulFunctionA();
-        return `product B1 collaborator with ${result}`;
+    createShoppingService() {
+        return new ShoppingService();
     }
 }
 
-class ConcreteProductB2 implements AbstractProductB {
-    usefulFunctionB(): string {
-        return "useful result of product B2";
-    }
-    anthorUsefulFunctionB(collaborator: AbstractProductA): string {
-        const result = collaborator.usefulFunctionA();
-        return `product B2 collaborator with ${result}`;
+interface AbstractLifeService {
+    useLifeService(): string;
+}
+
+interface AbstractShoppingService {
+    useLifeService(): string;
+}
+
+class LifeService implements AbstractLifeService {
+    useLifeService(): string {
+        return "享有视频会员服务权益";
     }
 }
 
-function clientNode(factory: AbstractFactory) {
-    const productA = factory.createProductA();
-    const productB = factory.createProductB();
-    console.log(productB.usefulFunctionB());
-    console.log(productB.anthorUsefulFunctionB(productA));
+class NoLifeService implements AbstractLifeService {
+    useLifeService(): string {
+        return "没有享有生活服务权益";
+    }
 }
 
-clientNode(new ConcreteFactory1());
+class ShoppingService implements AbstractShoppingService {
+    useLifeService(): string {
+        return "享有天天红包服务权益";
+    }
+}
 
-clientNode(new ConcreteFactory2());
+class NoShoppingService implements AbstractShoppingService {
+    useLifeService(): string {
+        return "没有享有购物服务权益";
+    }
+}
+
+function clientNode(vip: VIPCard) {
+    const life = vip.createLifeService();
+    console.log(life.useLifeService());
+
+    const shopping = vip.createShoppingService();
+    console.log(shopping.useLifeService());
+}
+
+console.log("如果我选择生活卡");
+clientNode(new LifeCardVIP());
+
+console.log("如果我选择购物卡");
+clientNode(new ShoppingCardVIP());
+
+console.log("如果我选择全能卡");
+clientNode(new AllInOneCardVIP());
 ```
-
-:::

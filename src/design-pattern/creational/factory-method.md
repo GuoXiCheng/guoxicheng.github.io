@@ -85,75 +85,79 @@ clientNode("京东");
 
 ## 业务场景类比
 
-使用工厂方法模式开发跨平台的UI组件，同时避免客户端代码与具体UI类之间的耦合。
+在使用ORM框架开发时，可能会创建多种数据库连接，例如：使用sqlite运行测试，在开发中使用mysql运行，在生产环境为了更好的性能而选择oracle。
 
 ```ts
-interface Button {
-    render(): string;
-    onClick(): string;
+interface DBOption {
+    getOption(): string;
 }
 
-class WindowsButton implements Button {
-    render(): string {
-        return "render windows button";
-    }
-
-    onClick(): string {
-        return "click windows button";
+class SqliteOption implements DBOption {
+    getOption(): string {
+        return "sqlite连线配置";
     }
 }
 
-class MacButton implements Button {
-    render(): string {
-        return "render mac button";
-    }
-
-    onClick(): string {
-        return "click mac button";
+class MysqlOption implements DBOption {
+    getOption(): string {
+        return "mysql连线配置";
     }
 }
 
-abstract class Dialog {
-    public abstract createButton(): Button;
-
-    public renderButton() {
-        const button = this.createButton();
-        const renderResult = button.render();
-        console.log(renderResult);
-
-        const clickedResult = button.onClick();
-        console.log(clickedResult);
+class OracleOption implements DBOption {
+    getOption(): string {
+        return "oracle连线配置";
     }
 }
 
-class WindowsDialog extends Dialog {
-    public createButton(): Button {
-        return new WindowsButton();
+abstract class DBConnection {
+    public abstract createOption(): DBOption;
+
+    public createConnection() {
+        const options = this.createOption();
+        console.log(`使用${options.getOption()}连接数据库`);
     }
 }
 
-class MacDialog extends Dialog {
-    public createButton(): Button {
-        return new MacButton();
+class SqliteConnection extends DBConnection {
+    public createOption(): DBOption {
+        return new SqliteOption();
     }
 }
 
-function clientNode(os: "win" | "mac") {
-    let dialog;
-    switch(os) {
-        case "win":
-            dialog = new WindowsDialog();
+class MysqlConnection extends DBConnection {
+    public createOption(): DBOption {
+        return new MysqlOption();
+    }
+}
+
+class OracleConnection extends DBConnection {
+    public createOption(): DBOption {
+        return new OracleOption();
+    }
+}
+
+function clientNode(env: "DEV" | "QAS" | "PRD") {
+    let connection: DBConnection;
+    switch(env) {
+        case "DEV":
+            connection = new SqliteConnection();
             break;
-        case "mac":
-            dialog = new MacDialog();
+        case "QAS":
+            connection = new MysqlConnection();
+            break;
+        case "PRD":
+            connection = new OracleConnection();
             break;
         default:
             throw new Error();
     }
-    dialog.renderButton();
+    connection.createConnection();
 }
 
-clientNode("win");
+clientNode("DEV");
 
-clientNode("mac");
+clientNode("QAS");
+
+clientNode("PRD");
 ```

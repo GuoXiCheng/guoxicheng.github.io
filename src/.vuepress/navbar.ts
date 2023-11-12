@@ -9,7 +9,8 @@ export default navbar([
   "/cloud-native/",
   "/design-pattern",
   "/develop",
-  "/algorithm"
+  // "/algorithm"
+  "/english"
   // {
   //   text: "指南",
   //   icon: "lightbulb",

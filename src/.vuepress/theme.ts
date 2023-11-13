@@ -1,6 +1,9 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import { getDirname, path } from "@vuepress/utils";
+
+const __dirname = getDirname(import.meta.url);
 
 export default hopeTheme({
   hostname: "https://guoxicheng.top",
@@ -66,7 +69,14 @@ export default hopeTheme({
       gfm: true,
       imgLazyload: true,
       imgSize: true,
-      include: true,
+      include: {
+        resolvePath: (filePath: string, cwd: string | null) => {
+          if (filePath.startsWith("@src"))
+            return filePath.replace("@src", path.resolve(__dirname, ".."));
+
+          return filePath;
+        },
+      },
       katex: true,
       mark: true,
       mermaid: true,

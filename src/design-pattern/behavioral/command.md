@@ -1,8 +1,9 @@
 # 命令模式
 
-```ts
+在智能家居系统中，可以通过语音来控制家居设备，例如：通过向智能语言助手发出指令来打开或者关闭灯光。
 
-<!-- @include: @src/code/test.ts -->
+```ts
+<!-- @include: @src/code/design-pattern/command/real-world.ts -->
 ```
 
 ::: playground#ts 命令模式交互演示

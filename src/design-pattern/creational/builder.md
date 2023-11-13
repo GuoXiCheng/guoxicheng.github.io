@@ -95,7 +95,7 @@ const player = new Player();
 clientNode(player);
 ```
 
-## 业务场景类比
+## 开发场景类比
 
 构建HTML中的表格。
 

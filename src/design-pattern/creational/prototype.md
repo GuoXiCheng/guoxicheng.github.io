@@ -33,7 +33,7 @@ const roundMooncakeMould = new MooncakeMould("round");
 console.log(roundMooncakeMould.clone().make());
 ```
 
-## 业务场景类比
+## 开发场景类比
 
 在创建对象后，可能会修改对象的状态，如果想要保存对象的副本，使得可以独立地修改这个副本，而不影响原始对象，可以使用原型模式。
 

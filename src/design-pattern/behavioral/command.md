@@ -1,5 +1,9 @@
 # 命令模式
 
+```ts
+
+<!-- @include: @src/code/test.ts -->
+```
 
 ::: playground#ts 命令模式交互演示
 

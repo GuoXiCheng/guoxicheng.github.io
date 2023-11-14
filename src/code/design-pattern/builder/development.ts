@@ -1,3 +1,7 @@
+// npm run code output/design-pattern/builder/development.js
+
+export {};
+
 interface Builder {
     addColumn(columns: string[]): void;
     addRow(rows: string[][]): void;

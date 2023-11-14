@@ -13,18 +13,7 @@ order: 5
 懒汉式就好比是即热式热水器，不需要提前加热，即用即热。
 
 ```ts
-class WaterHeater {
-    private static instance: WaterHeater;
-
-    private constructor() {}
-
-    public static getHotWater() {
-        if (!this.instance) {
-            return new WaterHeater();
-        }
-        return this.instance;
-    }
-}
+<!-- @include: @src/code/design-pattern/singleton/real-world-lazy.ts -->
 ```
 
 ### 饿汉式
@@ -32,15 +21,7 @@ class WaterHeater {
 饿汉式就好比是储水式热水器，需要提前加热好热水，等待使用。
 
 ```ts
-class WaterHeater {
-    private static instance = new WaterHeater();
-
-    private constructor() {}
-
-    public static getHotWater() {
-        return this.instance;
-    }
-}
+<!-- @include: @src/code/design-pattern/singleton/real-world-hungry.ts -->
 ```
 
 ## 开发场景类比
@@ -50,38 +31,11 @@ class WaterHeater {
 ### 懒汉式
 
 ```ts
-class Logger {
-    private static instance: Logger;
-
-    private constructor() {}
-
-    public static getLogger() {
-        if (!this.instance) {
-            return new Logger();
-        }
-        return this.instance;
-    }
-
-    public error(msg: string) {
-        console.error(msg);
-    }
-}
+<!-- @include: @src/code/design-pattern/singleton/development-lazy.ts -->
 ```
 
 ### 饿汉式
 
 ```ts
-class Logger {
-    private static instance = new Logger();
-
-    private constructor() {}
-
-    private static getLogger() {
-        return this.instance;
-    }
-
-    public error(msg: string) {
-        console.error(msg);
-    }
-}
+<!-- @include: @src/code/design-pattern/singleton/development-hungry.ts -->
 ```

@@ -1,3 +1,7 @@
+// npm run code output/design-pattern/chain-of-responsibility/development.js
+
+export {};
+
 interface Handler {
     setNext(handler: Handler): Handler;
     handle(request: string): string;

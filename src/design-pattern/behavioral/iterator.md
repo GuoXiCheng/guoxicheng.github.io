@@ -1,60 +1,15 @@
 # 迭代器模式
 
-::: playground#ts 迭代器模式交互演示
+## 现实世界类比
 
-@file index.ts
+在看电视时，只需要使用遥控器来一个一个的切换频道，而不需要知道电视的任何细节。
 
 ```ts
-interface MyIterator<T> {
-    next(): T;
-    hasNext(): boolean;
-}
-
-interface Aggregator<T> {
-    createIterator(): MyIterator<T>;
-}
-
-class ConcreteIterator implements MyIterator<string> {
-
-    private collection: string[];
-    private position = 0;
-
-    constructor(collection: string[]) {
-        this.collection = collection;
-    }
-
-    next(): string {
-        // 返回集合的下个元素，并将指针后移
-        return this.collection[this.position++];
-    }
-    hasNext(): boolean {
-        return this.position < this.collection.length;
-    }
-}
-
-class ConcreteAggregator implements Aggregator<string> {
-
-    private items: string[] = [];
-
-    public add(item: string): void {
-        this.items.push(item);
-    }
-
-    createIterator(): MyIterator<string> {
-        return new ConcreteIterator(this.items);
-    }
-}
-
-const concreteAggregator = new ConcreteAggregator();
-concreteAggregator.add("Item A");
-concreteAggregator.add("Item B");
-concreteAggregator.add("Item C");
-
-const iterator = concreteAggregator.createIterator();
-
-while(iterator.hasNext()) {
-    console.log(iterator.next());
-}
+<!-- @include: @src/code/design-pattern/iterator/real-world.ts -->
 ```
 
-:::
+## 开发场景类比
+
+```ts
+<!-- @include: @src/code/design-pattern/iterator/development.ts -->
+```

@@ -1,3 +1,6 @@
+// npm run code output/design-pattern/abstract-factory/development.js
+
+export {}
 interface MyRequest {
     createGetMethod(): AbstractGet;
     createPostMethod(): AbstractPost;

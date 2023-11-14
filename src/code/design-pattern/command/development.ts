@@ -1,4 +1,6 @@
-// run with: npm run code output/design-pattern/command/development.js
+// npm run code output/design-pattern/command/development.js
+
+export {};
 
 interface Command {
     execute(): void;

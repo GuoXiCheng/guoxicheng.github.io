@@ -1,4 +1,6 @@
-// run with: npm run code output/design-pattern/command/real-world.js
+// npm run code output/design-pattern/command/real-world.js
+
+export {};
 
 interface Command {
     execute(order: string): void;

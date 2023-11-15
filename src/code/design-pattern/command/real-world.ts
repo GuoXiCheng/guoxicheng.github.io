@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/command/real-world.js
-
 export {};
 
 interface Command {

@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/iterator/real-world.js
-
 export {};
 
 interface MyIterator<T> {

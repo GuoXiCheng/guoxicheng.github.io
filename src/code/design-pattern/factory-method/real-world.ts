@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/factory-method/real-world.js
-
 export {};
 
 interface ExpressService {

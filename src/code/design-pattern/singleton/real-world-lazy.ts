@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/singleton/real-world-lazy.js
-
 export {};
 
 class WaterHeater {

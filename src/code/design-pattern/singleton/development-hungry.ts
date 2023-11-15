@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/singleton/development-hungry.js
-
 export {};
 
 class Logger {

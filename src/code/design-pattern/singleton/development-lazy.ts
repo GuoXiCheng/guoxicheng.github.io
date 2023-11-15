@@ -1,5 +1,3 @@
-// npm run code src/code/design-pattern/singleton/development-lazy.ts
-
 export {};
 
 class Logger {

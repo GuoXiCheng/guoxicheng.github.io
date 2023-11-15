@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/chain-of-responsibility/development.js
-
 export {};
 
 interface Handler {

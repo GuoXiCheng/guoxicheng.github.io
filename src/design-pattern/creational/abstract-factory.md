@@ -9,7 +9,9 @@ order: 2
 
 
 ```ts
-<!-- @include: @src\code\design-pattern\abstract-factory\real-world.ts  -->
+// npm run code src/code/design-pattern/abstract-factory/real-world.ts
+
+<!-- @include: @src/code/design-pattern/abstract-factory/real-world.ts  -->
 ```
 
 ## 开发场景类比
@@ -17,5 +19,7 @@ order: 2
 假设你在开发中要整合微信小程序、抖音小程序和百度小程序各自所自带的网络请求方式，未来还有可能添加别的平台的小程序，因此你会想要使用统一的工厂接口，来屏蔽不同平台的差异。
 
 ```ts
+// npm run code src/code/design-pattern/abstract-factory/development.ts
+
 <!-- @include: @src/code/design-pattern/abstract-factory/development.ts  -->
 ```

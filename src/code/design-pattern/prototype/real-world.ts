@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/prototype/real-world.js
-
 export {};
 
 interface Mould {

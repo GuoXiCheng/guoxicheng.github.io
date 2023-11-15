@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/prototype/development.js
-
 export {};
 
 class User {

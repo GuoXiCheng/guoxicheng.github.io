@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/builder/real-world.js
-
 export {};
 
 interface WordBuilder {

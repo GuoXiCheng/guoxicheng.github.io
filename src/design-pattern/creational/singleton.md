@@ -13,6 +13,8 @@ order: 5
 懒汉式就好比是即热式热水器，不需要提前加热，即用即热。
 
 ```ts
+// npm run code src/code/design-pattern/singleton/real-world-lazy.ts
+
 <!-- @include: @src/code/design-pattern/singleton/real-world-lazy.ts -->
 ```
 
@@ -21,6 +23,8 @@ order: 5
 饿汉式就好比是储水式热水器，需要提前加热好热水，等待使用。
 
 ```ts
+// npm run code src/code/design-pattern/singleton/real-world-hungry.ts
+
 <!-- @include: @src/code/design-pattern/singleton/real-world-hungry.ts -->
 ```
 
@@ -31,11 +35,15 @@ order: 5
 ### 懒汉式
 
 ```ts
+// npm run code src/code/design-pattern/singleton/development-lazy.ts
+
 <!-- @include: @src/code/design-pattern/singleton/development-lazy.ts -->
 ```
 
 ### 饿汉式
 
 ```ts
+// npm run code src/code/design-pattern/singleton/development-hungry.ts
+
 <!-- @include: @src/code/design-pattern/singleton/development-hungry.ts -->
 ```

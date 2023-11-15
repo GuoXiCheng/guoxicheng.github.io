@@ -1,7 +1,5 @@
-
-// npm run code output/design-pattern/abstract-factory/real-world.js
-
 export {}
+
 interface VIPCard {
     createLifeService(): AbstractLifeService;
 

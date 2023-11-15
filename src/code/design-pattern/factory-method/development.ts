@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/factory-method/development.js
-
 export {};
 
 interface DBOption {

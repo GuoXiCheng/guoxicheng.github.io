@@ -1,5 +1,3 @@
-// npm run code output/design-pattern/chain-of-responsibility/real-world.js
-
 export {};
 
 interface Player {

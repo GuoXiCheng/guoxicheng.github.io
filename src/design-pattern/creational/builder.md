@@ -15,7 +15,8 @@ order: 3
 
 ## 开发场景类比
 
-构建HTML中的表格。
+一个常见的场景是在ORM框架中，使用建造者模式来组织SQL语句，以屏蔽底层数据库的差异。
+例如：MySQL和Oracle在分页查询语句上的差异，可以通过建造者模式的链式构建来进行屏蔽。
 
 ```ts
 // npm run code src/code/design-pattern/builder/development.ts

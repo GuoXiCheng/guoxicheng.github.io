@@ -1,108 +1,22 @@
 # 备忘录模式
 
+## 真实世界类比
 
-::: playground#ts 备忘录模式交互演示
-
-@file index.ts
+通过拍照可以捕捉人物或风景固定时刻的状态。
+照相机用来捕捉图像，相册用来存储和回复图像，每一张照片都是一个状态的备忘录，相册则是用来保存这些备忘录的地方。
 
 ```ts
-class Originator {
-    private state: string;
+// npm run code src/code/design-pattern/memento/real-world.ts
 
-    constructor(state: string) {
-        this.state = state;
-        console.log(`Originator initial state: ${state}`);
-    }
-
-    public doSomething() {
-        this.state = Math.random() * 100 + "";
-        console.log(`Originator state change to ${this.state}`);
-    }
-
-    public save(): Memento {
-        return new ConcreteMemento(this.state);
-    }
-
-    public restore(memento: Memento): void {
-        this.state = memento.getState();
-        console.log(`Originator state restore to ${this.state}`);
-    }
-}
-
-interface Memento {
-    getState(): string;
-    getName(): string;
-    getDate(): string;
-}
-
-class ConcreteMemento implements Memento {
-    private state: string;
-    private date: string;
-
-    constructor(state: string) {
-        this.state = state;
-        this.date = new Date().toISOString();
-    }
-
-    getState(): string {
-        return this.state;
-    }
-    getName(): string {
-        return `${this.date} / ${this.state}`;
-    }
-    getDate(): string {
-        return this.date;
-    }
-
-}
-
-class Caretaker {
-    private mementos: Memento[] = [];
-    private originator: Originator;
-
-    constructor(originator: Originator) {
-        this.originator = originator;
-    }
-
-    public backup() {
-        this.mementos.push(this.originator.save());
-    }
-
-    public undo() {
-        if (this.mementos.length === 0) return;
-
-        const memento = this.mementos.pop();
-        if (memento) this.originator.restore(memento);
-    }
-
-    public showHistory() {
-        console.log("show history");
-        for (const memento of this.mementos) {
-            console.log(memento.getName());
-        }
-    }
-}
-
-const originator = new Originator("super");
-
-const caretaker = new Caretaker(originator);
-
-caretaker.backup();
-originator.doSomething();
-
-caretaker.backup();
-originator.doSomething();
-
-caretaker.backup();
-originator.doSomething();
-
-caretaker.showHistory();
-
-console.log("undo");
-
-caretaker.undo();
-
-caretaker.undo();
+<!-- @include:@src/code/design-pattern/memento/real-world.ts -->
 ```
 
-:::
+## 开发场景类比
+
+在表单数据自动保存的开发场景中，可以使用备忘录模式来捕获并保存表单的状态，以便在需要时恢复到之前的状态。
+
+```ts
+// npm run code src/code/design-pattern/memento/development.ts
+
+<!-- @include:@src/code/design-pattern/memento/development.ts -->
+```

@@ -1,76 +1,78 @@
 export {};
 
-interface Builder {
-    addColumn(columns: string[]): void;
-    addRow(rows: string[][]): void;
+abstract class SQLQueryBuilder {
+    protected query: string = "";
+    protected tableName: string = "";
+    protected fields: string[] = ["*"];
+    protected orderClause: string = "";
+    protected limitClause: string = "";
+    protected offsetClause: string = "";
+
+    select(table: string, fields: string[] = ["*"]): this {
+        this.tableName = table;
+        this.fields = fields;
+        return this;
+    }
+
+    orderBy(column: string): this {
+        this.orderClause = ` ORDER BY ${column}`;
+        return this;
+    }
+
+    abstract limit(limit: number): this;
+    abstract offset(offset: number): this;
+
+    abstract build(): string;
 }
 
-class HtmlTableBuilder implements Builder {
-    private htmlTable!: HtmlTable;
-
-    constructor() {
-        this.reset();
+class MySQLQueryBuilder extends SQLQueryBuilder {
+    limit(limit: number): this {
+        this.limitClause = ` LIMIT ${limit}`;
+        return this;
     }
 
-    reset() {
-        this.htmlTable = new HtmlTable();
+    offset(offset: number): this {
+        this.offsetClause = ` OFFSET ${offset}`;
+        return this;
     }
 
-    addColumn(columns: string[]): void {
-        this.htmlTable.table.push("<tr>");
-        for (const column of columns) {
-            this.htmlTable.table.push(`<th>${column}</th>`);
-        }
-        this.htmlTable.table.push("</tr>");
-    }
-
-    addRow(rows: string[][]): void {
-        for (const row of rows) {
-            this.htmlTable.table.push("<tr>");
-            for (const cell of row) {
-                this.htmlTable.table.push(`<td>${cell}</td>`);
-            }
-            this.htmlTable.table.push("</tr>");
-        }
-    }
-
-    getTable() {
-        const table = this.htmlTable;
-        this.reset();
-        table.table.unshift("<table>");
-        table.table.push("</table>");
-        return table;
-    }
-}
-
-class HtmlTable {
-    public table: string[] = [];
-
-    public output() {
-        console.log(this.table.join(""));
+    build(): string {
+        this.query = `SELECT ${this.fields.join(", ")} FROM ${this.tableName}${this.orderClause}${this.limitClause}${this.offsetClause}`;
+        return this.query;
     }
 }
 
-class Director {
-    private builder!: Builder;
-
-    setBuilder(builder: Builder) {
-        this.builder = builder;
+class OracleQueryBuilder extends SQLQueryBuilder {
+    limit(limit: number): this {
+        this.limitClause = ` FETCH NEXT ${limit} ROWS ONLY`;
+        return this;
     }
 
-    buildHtmlTable(columns: string[], rows: string[][]) {
-        this.builder.addColumn(columns);
-        this.builder.addRow(rows);
+    offset(offset: number): this {
+        this.offsetClause = ` OFFSET ${offset} ROWS`;
+        return this;
+    }
+
+    build(): string {
+        this.query = `SELECT ${this.fields.join(", ")} FROM ${this.tableName}${this.orderClause}${this.offsetClause}${this.limitClause}`;
+        return this.query;
     }
 }
 
-function clientNode(director: Director) {
-    const builder = new HtmlTableBuilder();
+const mysqlQuery = new MySQLQueryBuilder()
+    .select("users", ["name", "email"])
+    .orderBy("name")
+    .limit(10)
+    .offset(20)
+    .build();
 
-    director.setBuilder(builder);
-    director.buildHtmlTable(["标题A", "标题B"], [["A1", "B1"], ["A2", "B2"]]);
-    builder.getTable().output();
-}
+console.log(mysqlQuery);
 
-const director = new Director();
-clientNode(director);
+const oracleQuery = new OracleQueryBuilder()
+    .select("users", ["name", "email"])
+    .orderBy("name")
+    .limit(10)
+    .offset(20)
+    .build();
+
+console.log(oracleQuery);

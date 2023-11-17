@@ -1,88 +1,11 @@
 # 观察者模式
 
-::: playground#ts 观察者模式交互演示
+## 真实世界类比
 
-@file index.ts
+出版社负责管理订阅者，在有新报纸时通知订阅的读者。
 
 ```ts
-interface Observer {
-    update(subject: Subject): void;
-}
+// npm run code src/code/design-pattern/observer/real-world.ts
 
-interface Subject {
-    attach(observer: Observer): void;
-
-    detach(observer: Observer): void;
-
-    notify(): void;
-}
-
-// 具体被观察者
-class ConcreteSubject implements Subject {
-
-    public state!: number;
-
-    private observers: Observer[] = [];
-
-    attach(observer: Observer): void {
-        const isExists = this.observers.includes(observer);
-        if (isExists) {
-            throw new Error("observer has been attached");
-        }
-        this.observers.push(observer);
-    }
-
-    detach(observer: Observer): void {
-        const observerIndex = this.observers.indexOf(observer);
-        if (observerIndex === -1) {
-            throw new Error("observer not exists");
-        }
-        this.observers.splice(observerIndex, 1);
-    }
-
-    notify(): void {
-        for (const observer of this.observers) {
-            observer.update(this);
-        }
-    }
-
-    someMethod() {
-        this.state = Math.floor(Math.random() * (10 + 1));
-        this.notify();
-    }
-}
-
-// 具体观察者A
-class ConcreteObserverA implements Observer {
-    update(subject: Subject): void {
-        if (subject instanceof ConcreteSubject && subject.state < 3) {
-            console.log("ConcreteObserverA Reacted to the event");
-        }
-    }
-}
-
-// 具体观察者B
-class ConcreteObserverB implements Observer {
-    update(subject: Subject): void {
-        if (subject instanceof ConcreteSubject && subject.state >= 3) {
-            console.log("ConcreteObserverB Reacted to the event");
-        }
-    }
-}
-
-const subject = new ConcreteSubject();
-
-const observerA = new ConcreteObserverA();
-const observerB = new ConcreteObserverB();
-
-subject.attach(observerA);
-subject.attach(observerB);
-
-subject.someMethod();
-
-subject.detach(observerB);
-
-subject.someMethod();
+<!-- @include:@src/code/design-pattern/observer/real-world.ts-->
 ```
-
-:::

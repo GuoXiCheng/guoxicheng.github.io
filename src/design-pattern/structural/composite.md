@@ -1,62 +1,13 @@
 # 组合模式
 
+## 典型用例
 
-::: playground#ts 组合模式交互演示
+### 文件和目录结构
 
-@file index.ts
+在文件系统中，可以用相同的方式来处理文件和目录。目录可以包含文件和其他目录，而文件是目录的一部分。这种模式允许客户端代码以统一的方式来处理复杂的树状结构。
 
 ```ts
-interface Component {
-    operation(indent: string): string;
-}
+// npm run code src/code/design-pattern/composite/directory-structure.ts
 
-class Leaf implements Component {
-
-    private name: string;
-
-    constructor(name: string) {
-        this.name = name;
-    }
-
-    operation(indent: string): string {
-        return `${indent}Leaf(${this.name})`;
-    }
-}
-
-class Composite implements Component {
-
-    private children: Component[] = [];
-
-    add(component: Component): void {
-        this.children.push(component);
-    }
-
-    remove(component: Component): void {
-        const componentIndex = this.children.indexOf(component);
-        if (componentIndex > -1) {
-            this.children.splice(componentIndex, 1);
-        }
-    }
-
-    operation(indent: string): string {
-        return `\n${indent}Branch(\n${this.children.map(child => child.operation(indent+ " ")).join('\n')}\n${indent})`;
-    }
-}
-
-const tree = new Composite();
-
-const branchA = new Composite();
-branchA.add(new Leaf("Leaf A1"));
-branchA.add(new Leaf("Leaf A2"));
-
-const branchB = new Composite();
-branchB.add(new Leaf("Leaf B1"));
-branchB.add(new Leaf("Leaf B2"));
-
-tree.add(branchA);
-tree.add(branchB);
-
-console.log(tree.operation(""));
+<!-- @include:@src/code/design-pattern/composite/directory-structure.ts -->
 ```
-
-:::

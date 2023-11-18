@@ -1,50 +1,13 @@
 # 状态模式
 
+## 典型用例
 
-::: playground#ts 状态模式交互演示
+### 订单管理
 
-@file index.ts
+在订单管理系统中，订单会有不同的状态: 新订单、已支付、已发货、已完成、已取消。每个状态会有不同的处理逻辑。
 
 ```ts
-interface State {
-    handle(context: Context): void;
-}
+// npm run code src/code/design-pattern/state/order.ts
 
-class OnState implements State {
-    handle(context: Context): void {
-        console.log("Turning On");
-        context.setState(new OffState());
-    }
-}
-
-class OffState implements State {
-    handle(context: Context): void {
-        console.log("Turning Off");
-        context.setState(new OnState());
-    }
-}
-
-class Context {
-    private state: State;
-
-    constructor(state: State) {
-        this.state = state;
-    }
-
-    setState(state: State) {
-        this.state = state;
-    }
-
-    handle(): void {
-        this.state.handle(this);
-    }
-}
-
-const light = new Context(new OnState());
-
-light.handle();
-
-light.handle();
+<!-- @include:@src/code/design-pattern/state/order.ts -->
 ```
-
-:::

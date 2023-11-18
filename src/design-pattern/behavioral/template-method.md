@@ -1,55 +1,13 @@
 # 模板方法模式
 
+## 典型用例
 
-::: playground#ts 模板方法模式交互演示
+### 数据处理
 
-@file index.ts
+在处理数据的应用中，通常有一个固定的流程（如读取、解析、处理、输出数据），但是每个步骤的具体实现可能根据数据的不同格式而变化。模板方法可以定义处理流程的骨架，而具体步骤的实现则留给子类。
 
 ```ts
-abstract class AbstractClass {
-    // 这是模板方法
-    templateMethod(): void {
-        this.getData();
-        this.processData();
-        this.saveData();
-    }
+// npm run code src/code/design-pattern/template-method/data-processing.ts
 
-    protected abstract getData(): void;
-
-    protected abstract processData(): void;
-
-    protected abstract saveData(): void;
-}
-
-class HtmlReport extends AbstractClass {
-    protected getData(): void {
-        console.log("get html data");
-    }
-    protected processData(): void {
-        console.log("process html data");
-    }
-    protected saveData(): void {
-        console.log("save html data");
-    }
-}
-
-class PdfReport extends AbstractClass {
-    protected getData(): void {
-        console.log("get pdf data");
-    }
-    protected processData(): void {
-        console.log("process pdf data");
-    }
-    protected saveData(): void {
-        console.log("save pdf data");
-    }
-}
-
-const htmlReport = new HtmlReport();
-htmlReport.templateMethod();
-
-const pdfReport = new PdfReport();
-pdfReport.templateMethod();
+<!-- @include:@src/code/design-pattern/template-method/data-processing.ts -->
 ```
-
-:::

@@ -1,73 +1,11 @@
 # 访问者模式
 
+## 典型用例
 
-::: playground#ts 访问者模式交互演示
+### 保证兼容性和扩展性
 
-@file index.ts
+为保证兼容性和扩展性，当需要对一组不同类型的对象执行操作，且这些对象经常添加新类型时，访问者模式允许在不修改现有类的情况下添加新操作。
 
 ```ts
-interface Component {
-    accept(visitor: Visitor): void;
-}
-
-class ConcreteComponentA implements Component {
-    accept(visitor: Visitor): void {
-        visitor.visitConcreteComponentA(this);
-    }
-
-    public exclusiveMethodOfConcreteComponentA(): string {
-        return "A";
-    }
-
-}
-
-class ConcreteComponentB implements Component {
-    accept(visitor: Visitor): void {
-        visitor.visitConcreteComponentB(this);
-    }
-
-    public exclusiveMethodOfConcreteComponentB(): string {
-        return "B";
-    }
-}
-
-interface Visitor {
-    visitConcreteComponentA(element: ConcreteComponentA): void;
-    visitConcreteComponentB(element: ConcreteComponentB): void;
-}
-
-class ConcreteVisitor1 implements Visitor {
-    visitConcreteComponentA(element: ConcreteComponentA): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentA()} ConcreteVisitor1`);
-    }
-    visitConcreteComponentB(element: ConcreteComponentB): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentB()} ConcreteVisitor1`);
-    }
-}
-
-class ConcreteVisitor2 implements Visitor {
-    visitConcreteComponentA(element: ConcreteComponentA): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentA()} ConcreteVisitor2`);
-    }
-    visitConcreteComponentB(element: ConcreteComponentB): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentB()} ConcreteVisitor2`);
-    }
-}
-
-function clientNode(components: Component[], visitor: Visitor) {
-    for (const component of components) {
-        component.accept(visitor);
-    }
-}
-
-const components = [new ConcreteComponentA(), new ConcreteComponentB()];
-const visitor1 = new ConcreteVisitor1();
-
-clientNode(components, visitor1);
-
-const visitor2 = new ConcreteVisitor2();
-
-clientNode(components, visitor2);
+<!-- @include:@src/code/design-pattern/visitor/compatibility.ts -->
 ```
-
-:::

@@ -1,48 +1,13 @@
 # 代理模式
 
+## 典型用例
 
-::: playground#ts 代理模式交互演示
+### 保护代理
 
-@file index.ts
+控制对原始对象的访问，用于不同权限的访问控制。保护代理根据访问者的权限决定是否允许访问真实对象。
 
 ```ts
-interface Subject {
-    request(): void;
-}
+// npm run code src/code/design-pattern/proxy/protection-agent.ts
 
-class RealSubject implements Subject {
-    request(): void {
-        console.log("RealSubject handled Request");
-    }
-}
-
-class MyProxy implements Subject {
-    private realSubject: RealSubject;
-
-    constructor(realSubject: RealSubject) {
-        this.realSubject = realSubject;
-    }
-
-    request(): void {
-        if (this.checkAccess()) {
-            this.realSubject.request();
-            this.logAccess();
-        }
-    }
-
-    private checkAccess() {
-        return Math.round((Math.random()*10)) % 2 === 0;
-    }
-
-    private logAccess() {
-        console.log("Logging");
-    }
-}
-
-const realSubject = new RealSubject();
-const myProxy = new MyProxy(realSubject);
-
-myProxy.request();
+<!-- @include: @src/code/design-pattern/proxy/protection-agent.ts -->
 ```
-
-:::

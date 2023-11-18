@@ -1,46 +1,13 @@
 # 外观模式
 
+## 典型用例
 
-::: playground#ts 外观模式交互演示
+### 统一多个微服务
 
-@file index.ts
+在微服务架构中，外观模式可以用来提供一个统一的接口来整合多个微服务，使得客户端不需要与每个服务单独交互。
 
 ```ts
-class SubSystemA {
-    public operationA() {
-        return "operate system A";
-    }
-}
+// npm run code src/code/design-pattern/facade/unify-microservices.ts
 
-class SubSystemB {
-    public operationB() {
-        return "operate system B";
-    }
-}
-
-class Facade {
-    private subsystemA: SubSystemA;
-    private subsystemB: SubSystemB;
-
-    constructor(subsystemA: SubSystemA | null = null, subsystemB: SubSystemB | null = null) {
-        this.subsystemA = subsystemA || new SubSystemA();
-        this.subsystemB = subsystemB || new SubSystemB();
-    }
-
-    public operation() {
-        const operateReusltA = this.subsystemA.operationA();
-        console.log(operateReusltA);
-
-        const operateResultB = this.subsystemB.operationB();
-        console.log(operateResultB);
-    }
-}
-
-const subsystemA = new SubSystemA();
-const subsystemB = new SubSystemB();
-
-const facade = new Facade(subsystemA, subsystemB);
-facade.operation();
+<!-- @include: @src/code/design-pattern/facade/unify-microservices.ts -->
 ```
-
-:::

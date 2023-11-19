@@ -4,23 +4,16 @@ order: 1
 
 # 工厂方法模式
 
-## 真实世界类比
+## 典型用例
 
-假设你要去菜鸟驿站寄快递，你可以选择京东快递、顺丰快递、中通快递等，并且这个菜鸟驿站后续可能还会有其他快递公司入驻。
+### 依赖注入
 
-```ts
-// npm run code src/code/design-pattern/factory-method/real-world.ts
+当一个类需要创建依赖对象，而又不应该知道具体的类时，可以使用工厂方法模式。例如：在使用日志记录器时，客户端无需知道具体使用哪种日志记录器，而只需与日志工厂接口交互。
 
-<!-- @include: @src/code/design-pattern/factory-method/real-world.ts  -->
-```
-
-
-## 开发场景类比
-
-在使用ORM框架开发时，可能会创建多种数据库连接，例如：使用sqlite运行测试，在开发中使用mysql运行，在生产环境为了更好的性能而选择oracle。
+这种方式支持依赖倒置原则，使得高级模块（客户端）不会依赖于低级模块（具体的日志记录器），而是依赖于抽象（日志记录器接口）。
 
 ```ts
-// npm run code src/code/design-pattern/factory-method/development.ts
+// npm run code src/code/design-pattern/factory-method/dependency-injection.ts
 
-<!-- @include: @src/code/design-pattern/factory-method/development.ts  -->
+<!-- @include: @src/code/design-pattern/factory-method/dependency-injection.ts  -->
 ```

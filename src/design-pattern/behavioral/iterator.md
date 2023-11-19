@@ -1,19 +1,13 @@
 # 迭代器模式
 
-## 现实世界类比
+## 典型用例
 
-在看电视时，只需要使用遥控器来一个一个的切换频道，而不需要知道电视的任何细节。
+### 遍历集合
 
-```ts
-// npm run code src/code/design-pattern/iterator/real-world.ts
-
-<!-- @include: @src/code/design-pattern/iterator/real-world.ts -->
-```
-
-## 开发场景类比
+当需要遍历不同类型的集合对象（如数组、列表、树结构、图）时，迭代器模式提供了一种统一的方法来访问它们的元素，无需了解集合的内部表示。
 
 ```ts
-// npm run code src/code/design-pattern/iterator/development.ts
+// npm run code src/code/design-pattern/iterator/ergodic-set.ts
 
-<!-- @include: @src/code/design-pattern/iterator/development.ts -->
+<!-- @include:@src/code/design-pattern/iterator/ergodic-set.ts -->
 ```

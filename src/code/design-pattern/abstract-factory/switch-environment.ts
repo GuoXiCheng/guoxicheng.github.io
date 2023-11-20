@@ -1,5 +1,6 @@
 export {};
 
+// 定义一些“产品”接口
 interface DatabaseConnection {
     query(sql: string): any;
 }
@@ -8,6 +9,7 @@ interface Logger {
     log(message: string): void;
 }
 
+// 创建具体的产品实现类
 // 生产环境的实现
 class ProductionDatabaseConnection implements DatabaseConnection {
     query(sql: string): any {
@@ -36,11 +38,13 @@ class MockLogger implements Logger {
     }
 }
 
+// 定义一个抽象工厂接口，它包含创建所有不同类型产品的方法
 interface AbstractFactory {
     createDatabaseConnection(): DatabaseConnection;
     createLogger(): Logger;
 }
 
+// 创建具体的工厂类
 class ProductionEnvironmentFactory implements AbstractFactory {
     createDatabaseConnection(): DatabaseConnection {
         return new ProductionDatabaseConnection();

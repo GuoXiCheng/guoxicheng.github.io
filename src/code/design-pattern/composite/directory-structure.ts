@@ -1,5 +1,6 @@
 export {};
 
+// 定义文件和目录共同的抽象组件类
 abstract class FileSystemComponent {
     protected name: string;
 
@@ -11,7 +12,7 @@ abstract class FileSystemComponent {
     abstract print(indentation: string): void;
 }
 
-// 文件类（叶子节点）
+// 创建具体的组件类：文件类（叶子节点）
 class MyFile extends FileSystemComponent {
     private size: number;
 
@@ -29,7 +30,7 @@ class MyFile extends FileSystemComponent {
     }
 }
 
-// 目录类（复合节点）
+// 创建具体的组件类：目录类（复合节点）
 class Directory extends FileSystemComponent {
     private components: FileSystemComponent[] = [];
 

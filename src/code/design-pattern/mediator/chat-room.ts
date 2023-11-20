@@ -1,5 +1,6 @@
 export {};
 
+// 定义中介者接口
 interface Mediator {
     registerUser(user: User): void;
     sendMessage(message: string, user: User): void;
@@ -10,6 +11,7 @@ interface User {
     receive(message: string): void;
 }
 
+// 创建具体中介者
 class ChatRoom implements Mediator {
     private users: User[] = [];
 

@@ -1,10 +1,11 @@
 export {};
 
+// 定义一个“产品”接口
 interface Logger {
     log(message: string): void;
 }
 
-
+// 创建具体的产品类
 class ConsoleLogger implements Logger {
     log(message: string): void {
         console.log(`ConsoleLogger: ${message}`);
@@ -18,10 +19,12 @@ class FileLogger implements Logger {
     }
 }
 
+// 定义一个“工厂”接口，用于创建“产品”
 interface LoggerFactory {
     createLogger(): Logger;
 }
 
+// 创建具体的工厂类
 class ConsoleLoggerFactory implements LoggerFactory {
     createLogger(): Logger {
         return new ConsoleLogger();

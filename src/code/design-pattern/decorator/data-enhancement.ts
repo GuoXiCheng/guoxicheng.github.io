@@ -1,10 +1,12 @@
 export {};
 
+// 定义一个数据流接口作为所有具体数据流和装饰者的共同接口
 interface DataStream {
     read(): string;
     write(data: string): void;
 }
 
+// 创建具体的数据流类
 class FileDataStream implements DataStream {
     read(): string {
         // 从文件读取数据
@@ -17,6 +19,7 @@ class FileDataStream implements DataStream {
     }
 }
 
+// 创建装饰者基类
 abstract class DataStreamDecorator implements DataStream {
     protected wrappedStream: DataStream;
 
@@ -33,6 +36,7 @@ abstract class DataStreamDecorator implements DataStream {
     }
 }
 
+// 创建具体的装饰者类
 class EncryptionDecorator extends DataStreamDecorator {
     read(): string {
         const data = this.wrappedStream.read();

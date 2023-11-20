@@ -1,15 +1,18 @@
 export {};
 
+// 定义观察者接口
 interface Observer {
     update(message: string): void;
 }
 
+// 定义主题接口
 interface Subject {
     subscribe(observer: Observer): void;
     unsubscribe(observer: Observer): void;
     notify(message: string): void;
 }
 
+// 创建一个具体的主题类。这个类将维护一个观察者列表，并实现订阅、退订和通知方法
 class ConcreteSubject implements Subject {
     private observers: Observer[] = [];
 
@@ -34,6 +37,7 @@ class ConcreteSubject implements Subject {
     }
 }
 
+// 创建一个或多个具体的观察者类
 class ConcreteObserver implements Observer {
     constructor(private name: string) {}
 

@@ -1,9 +1,11 @@
 export {};
 
+// 为所有具体状态定义一个共同的接口
 interface OrderState {
     handleOrder(orderContext: OrderContext): void;
 }
 
+// 为每个可能的订单状态定义一个具体状态类，每个类都实现抽象的状态接口
 class NewOrderState implements OrderState {
     handleOrder(orderContext: OrderContext): void {
         console.log("Handling new order");
@@ -37,6 +39,7 @@ class CancelledOrderState implements OrderState {
     }
 }
 
+// 创建一个上下文类，它将维护当前状态，并允许状态切换
 class OrderContext {
     private state: OrderState;
 

@@ -1,4 +1,4 @@
-// 元素接口
+// 定义元素接口，用于接收访问者
 interface MyElement {
     accept(visitor: Visitor): void;
 }
@@ -10,6 +10,7 @@ interface Visitor {
     // 更多元素的访问方法可以在这里添加
 }
 
+// 创建具体元素
 class ConcreteElementA implements MyElement {
     accept(visitor: Visitor): void {
         visitor.visitConcreteElementA(this);
@@ -30,6 +31,7 @@ class ConcreteElementB implements MyElement {
     }
 }
 
+// 为不同操作创建具体访问者
 class ConcreteVisitor1 implements Visitor {
     visitConcreteElementA(element: ConcreteElementA): void {
         console.log('ConcreteVisitor1 visiting ConcreteElementA.');

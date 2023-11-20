@@ -1,9 +1,11 @@
 export {};
 
+// 定义一个原型接口，包含一个克隆方法
 interface Prototype {
     clone(): Prototype;
 }
 
+// 具体原型类
 class ComplexObject implements Prototype {
     private data: number[];
 

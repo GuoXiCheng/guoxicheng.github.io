@@ -1,5 +1,7 @@
 export {};
 
+// 假设有几个微服务，每个服务都有自己的接口
+
 // 用户服务
 class UserService {
     getUser(userId: string): string {
@@ -21,7 +23,7 @@ class PaymentService {
     }
 }
 
-
+// 创建一个外观类来封装对微服务的访问
 class ServicesFacade {
     private userService: UserService;
     private orderService: OrderService;

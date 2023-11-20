@@ -1,15 +1,18 @@
 export {};
 
+// 定义真实对象和代理的共同接口
 interface SensitiveOperation {
     performOperation(): void;
 }
 
+// 创建真实对象类
 class SensitiveObject implements SensitiveOperation {
     performOperation(): void {
         console.log("Performing a sensitive operation.");
     }
 }
 
+// 创建保护代理类
 class ProtectedProxy implements SensitiveOperation {
     private sensitiveObject: SensitiveObject;
     private hasAccess: boolean;

@@ -17,6 +17,7 @@ class DatabaseConnection implements NetworkConnection {
     }
 }
 
+// 创建一个连接池负责管理连接的对象
 class ConnectionPool {
     private availableConnections: NetworkConnection[] = [];
     private inUseConnections: NetworkConnection[] = [];

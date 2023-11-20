@@ -1,5 +1,6 @@
 export {};
 
+// 创建一个抽象类，定义数据处理的模板方法，并声明在模板方法中使用的抽象步骤
 abstract class DataProcessor {
     // 模板方法
     public processData(): void {
@@ -16,6 +17,7 @@ abstract class DataProcessor {
     protected abstract outputData(data: any): void;
 }
 
+// 为不同数据格式创建具体的子类，实现抽象步骤
 class JSONDataProcessor extends DataProcessor {
     protected readData(): string {
         // 读取 JSON 数据

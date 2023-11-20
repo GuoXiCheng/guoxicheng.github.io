@@ -41,6 +41,7 @@ interface GameState {
     // 可以添加更多的游戏相关状态
 }
 
+// 负责保存和恢复备忘录的状态管理者类
 class GameStateManager {
     private mementos: Memento[] = [];
 

@@ -22,6 +22,7 @@ class NewClass implements NewInterface {
     }
 }
 
+// 创建适配器，将旧的接口适配到新的接口
 class Adapter implements NewInterface {
     private oldInstance: OldInterface;
 

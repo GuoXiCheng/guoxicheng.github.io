@@ -1,5 +1,6 @@
 export {};
 
+// 创建一个缓存类
 class MyCache {
     private static instance: MyCache;
     private store: Record<string, any>;

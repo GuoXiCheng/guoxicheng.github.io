@@ -1,9 +1,11 @@
 export {};
 
+// 定义一个策略接口，用于所有具体策略的共同行为
 interface DiscountStrategy {
     calculateDiscount(amount: number): number;
 }
 
+// 为不同类型的用户创建具体的策略类，每个类都实现抽象的策略接口
 class RegularUserDiscount implements DiscountStrategy {
     calculateDiscount(amount: number): number {
         // 普通用户可能没有折扣
@@ -25,6 +27,7 @@ class PremiumMemberDiscount implements DiscountStrategy {
     }
 }
 
+// 创建一个上下文，用于管理策略，并根据策略计算出折扣价
 class ShoppingCart {
     private strategy: DiscountStrategy;
 

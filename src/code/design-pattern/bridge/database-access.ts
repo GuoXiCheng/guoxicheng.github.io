@@ -1,3 +1,5 @@
+export {};
+
 // 数据库访问接口
 interface Database {
     connect(): void;
@@ -36,7 +38,7 @@ class PostgreSqlDatabase implements Database {
     }
 }
 
-// 抽象类
+// 创建一个抽象类持有数据库访问接口的引用，并定义与数据库操作相关的业务逻辑
 abstract class DataService {
     protected database: Database;
 

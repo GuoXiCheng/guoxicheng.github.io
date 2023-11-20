@@ -1,5 +1,6 @@
 export {};
 
+// 定义一个建造者接口，这个接口将规定必须实现哪些方法来构建 SQL 查询的不同部分
 interface SQLQueryBuilder {
     select(table: string, fields: string[]): SQLQueryBuilder;
     where(conditions: string): SQLQueryBuilder;
@@ -7,6 +8,7 @@ interface SQLQueryBuilder {
     getQuery(): string;
 }
 
+// 具体建造者
 class SQLQuery implements SQLQueryBuilder {
     private query: string = '';
 

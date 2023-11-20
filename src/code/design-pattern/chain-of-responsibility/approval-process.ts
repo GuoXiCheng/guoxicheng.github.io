@@ -1,5 +1,6 @@
 export {};
 
+// 定义处理者接口，声明处理请求的方法
 interface Handler {
     setNext(handler: Handler): Handler;
     handle(request: MyRequest): void;
@@ -9,6 +10,7 @@ class MyRequest {
     constructor(public type: string, public amount: number) {}
 }
 
+// 创建具体处理者，每个处理者决定是否处理请求或将其传递给下一个处理者
 class AbstractHandler implements Handler {
     private nextHandler!: Handler;
 

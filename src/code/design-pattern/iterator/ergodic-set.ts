@@ -1,5 +1,6 @@
 export {};
 
+// 定义迭代器接口，包含遍历集合所需的方法
 interface MyIterator<T> {
     next(): T;
     hasNext(): boolean;
@@ -9,6 +10,7 @@ interface IterableCollection<T> {
     createIterator(): MyIterator<T>;
 }
 
+// 具体的集合类
 class ConcreteCollection<T> implements IterableCollection<T> {
     private items: T[] = [];
 
@@ -29,6 +31,7 @@ class ConcreteCollection<T> implements IterableCollection<T> {
     }
 }
 
+// 具体的迭代器类
 class ConcreteIterator<T> implements MyIterator<T> {
     private collection: ConcreteCollection<T>;
     private position: number = 0;

@@ -1,10 +1,12 @@
 export {};
 
+// 定义命令接口
 interface Command {
     execute(): void;
     undo(): void;
 }
 
+// 创建接收者执行与请求相关操作
 class TextEditor {
     private content: string = '';
 
@@ -21,6 +23,7 @@ class TextEditor {
     }
 }
 
+// 创建具体命令类，每个命令类将执行一个操作并保存其状态以便撤销。
 class AppendCommand implements Command {
     private editor: TextEditor;
     private text: string;
@@ -59,6 +62,8 @@ class DeleteCommand implements Command {
     }
 }
 
+// 创建一个调用者类，用于执行命令。
+// 并创建历史记录用于管理撤销和重做操作。
 class CommandInvoker {
     private history: Command[] = [];
     private undoneCommands: Command[] = [];

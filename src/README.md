@@ -10,6 +10,7 @@ bgImageStyle:
   background-attachment: fixed
 heroText: Guo's Page
 tagline: Eat, Code, Sleep, Repeat
+footer: false
 actions:
   - text: Get Started 💡
     link: /projects/SKIP-Docs/

@@ -9,7 +9,7 @@ bgImageDark: /assets/image/bg/2-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Guo's Page
-tagline: Eat, Code, Sleep, Repeat
+tagline: Eat, Code, Sleep, and Then Repeat
 footer: false
 actions:
   - text: Get Started 💡

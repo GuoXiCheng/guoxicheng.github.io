@@ -17,3 +17,43 @@
 
 <!-- @include:@src/code/design-pattern/adapter/unify-interfaces.ts -->
 ```
+
+### 集成第三方库或旧系统
+
+适配器模式可以用于集成第三方库或旧系统。例如：有一个第三方库或旧系统，它提供了一个特定的接口，但这个接口与当前系统的接口不兼容，可以创建一个适配器来解决这个问题。
+
+```ts
+// npm run code src/code/design-pattern/adapter/integrating-legacy-interface.ts
+
+<!-- @include: @src/code/design-pattern/adapter/integrating-legacy-interface.ts -->
+```
+
+### 替换系统组件
+
+适配器模式可以用于替换系统组件，例如：需要替换系统的一个组件，但新组件的接口与旧组件的接口不同。适配器模式可以用于使新组件与现有系统兼容。
+
+```ts
+// npm run code src/code/design-pattern/adapter/replacement-system-component.ts
+
+<!-- @include: @src/code/design-pattern/adapter/replacement-system-component.ts -->
+```
+
+### 向旧代码增加新功能
+
+适配器模式可以在不更改旧代码的基础上，向系统添加新功能。适配器模式可以用来封装新功能，确保它们与旧系统的接口保持一致。
+
+```ts
+// npm run code src/code/design-pattern/adapter/add-new-functionality-to-old-code.ts
+
+<!-- @include: @src/code/design-pattern/adapter/add-new-functionality-to-old-code.ts -->
+```
+
+### API接口适配
+
+适配器模式可以在不同版本的API之间进行适配。例如：一个老旧系统需要与新版本API对接，适配器模式可以用于兼容新旧接口。
+
+```ts
+// npm run code src/code/design-pattern/adapter/api-interface-adaptation.ts
+
+<!-- @include: @src/code/design-pattern/adapter/api-interface-adaptation.ts -->
+```

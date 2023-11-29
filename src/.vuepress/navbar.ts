@@ -10,7 +10,8 @@ export default navbar([
   "/design-pattern",
   "/develop",
   // "/algorithm"
-  "/english"
+  "/english",
+  "/article"
   // {
   //   text: "指南",
   //   icon: "lightbulb",

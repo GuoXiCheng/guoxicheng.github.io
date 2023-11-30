@@ -135,3 +135,42 @@ test('description of your test', () => {
 使用`npm login`命令登录到公共镜像仓库，如果是私有镜像仓库，可以在根目录下新建`.npmrc`文件，添加`registry`字段指向私有镜像仓库地址，例如：`registry=https://npm.example.com`。
 
 最后使用`npm publish`命令发布 npm 库。
+
+## 自动发布
+
+首先在 npm 账户中生成一个新的访问令牌，并添加到 Github 仓库的 Actions Secrets 中。
+
+在项目根目录的`.github/workflows`目录下创建一个名为`publish.yml`的文件，用于配置 Github Actions，并确保在每次发布前更新`package.json`文件中的`version`版本。
+
+```yaml
+name: Publish npm package
+
+on:
+  push:
+    branches:
+      - publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build 
+
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+```

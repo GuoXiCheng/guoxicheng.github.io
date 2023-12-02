@@ -9,7 +9,7 @@ export default navbar([
   "/cloud-native/",
   "/design-pattern",
   "/develop",
-  // "/algorithm"
+  "/algorithm",
   "/english",
   "/article"
   // {

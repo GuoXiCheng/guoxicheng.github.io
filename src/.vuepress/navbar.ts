@@ -1,7 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-//  "/",
+  //  "/",
   // "/demo/",
   "/projects/",
   "/knowledge/",
@@ -11,7 +11,25 @@ export default navbar([
   "/develop",
   "/algorithm",
   "/english",
-  "/article"
+  "/article",
+  {
+    text: "在线编程",
+    icon: "code",
+    children: [
+      {
+        text: "TypeScript",
+        link: "https://www.typescriptlang.org/play",
+      },
+      {
+        text: "Kotlin",
+        link: "https://play.kotlinlang.org"
+      },
+      {
+        text: "Mermaid",
+        link: "https://mermaid.live/edit"
+      }
+    ]
+  }
   // {
   //   text: "指南",
   //   icon: "lightbulb",

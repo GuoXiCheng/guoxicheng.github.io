@@ -7,13 +7,21 @@ dir:
 
 ## npm 镜像源切换
 
-```bash title="查看当前使用的镜像源"
+::: code-tabs
+
+@tab 查看当前使用的镜像源
+```bash
 npm config get registry
 ```
-
-```bash title="切换官方镜像源"
+@tab 切换淘宝镜像源
+```bash
+npm config set registry https://registry.npm.taobao.org
+```
+@tab 切换NPM官方镜像源
+```bash
 npm config set registry https://registry.npmjs.org
 ```
+:::
 
 ## 替换字符串中的回车、空格和换行
 

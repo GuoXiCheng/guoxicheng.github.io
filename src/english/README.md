@@ -132,7 +132,6 @@ signature: 签名
 parameterized: 参数化的
 intercepte: 拦截
 destined: 注定的
-lack: 缺乏
 scope: 作用域
 hence: 因此
 edge-case: 边缘情况
@@ -152,3 +151,50 @@ stripped: 剥离
 separate: 分离
 mounted: 安装
 so far: 到目前为止
+treat: 对待
+largely: 主要地
+delegate: 委托
+retrieval: 检索
+candidate: 候选
+shorthand: 简写
+elsewhere: 在别处
+instantiate: 实例化
+built-in: 内置的
+inversion of control: 控制反转
+occasionally: 偶尔
+necessarily: 必要地
+in such a case: 在这种情况下
+lack of: 缺乏
+constructor-based: 基于构造函数的
+property-based: 基于属性的
+injection: 注入
+via: 通过
+top-level: 顶级的
+either or: 要么...要么...
+tedious: 乏味的
+registration: 注册
+so that: 以便
+thus far: 到目前为止
+in certain circumstances: 在某些情况下
+briefly: 简要地
+standalone: 独立的
+utilize: 利用
+annotate: 注解
+starting point: 起点
+internal: 内部的
+theoretically: 理论上
+typical: 典型的
+emphasize: 强调
+encapsulate: 封装
+closely-related: 密切相关的
+neither nor: 既不...也不...
+make sense: 有意义
+establish: 建立
+effortlessly: 不费力地
+re-export: 重新导出
+in addition: 此外
+global-scoped: 全局作用域
+generally: 通常
+ubiquitous: 无处不在的
+in turn: 反过来
+customizable: 可定制的

@@ -4,7 +4,7 @@ export default navbar([
   //  "/",
   // "/demo/",
   "/projects/",
-  "/knowledge/",
+  // "/knowledge/",
   "/reading/",
   "/cloud-native/",
   "/design-pattern",

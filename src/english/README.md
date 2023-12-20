@@ -4,11 +4,12 @@ icon: headset
 index: false
 ---
 
-efficient: 有效率的
-scalable: 可扩展的
-server-side: 服务器端
-progressive: 渐进的
-Oriented: 面向
+生词：
+
+
+
+
+
 Reactive: 响应式
 under the hood: 在后台
 robust: 健壮的
@@ -198,3 +199,59 @@ generally: 通常
 ubiquitous: 无处不在的
 in turn: 反过来
 customizable: 可定制的
+denote: 表示
+by default: 默认情况下
+equivalent: 等价的
+just as with: 正如
+restrict: 限制
+comma: 逗号
+at times: 有时
+illustrate: 说明
+as mentioned above: 如上所述
+sequentially: 依次地
+come with: 附带
+appropriate: 适当的
+user-friendly: 用户友好的
+unrecognized: 未被识别的
+inherit: 继承
+partially: 部分地
+basically: 基本上
+properly: 适当地
+certain: 一定的
+assume: 假设
+hard-code: 硬编码
+valuable: 有价值的
+hierarchy: 层次结构
+recognize: 认识
+seamlessly: 无缝地
+pull out: 提取
+examine: 检查
+originate: 起源
+execution: 执行
+generic: 通用的
+in place: 在原地
+in terms of: 在...方面
+craft: 精心制作
+tailored: 定制的
+interpose: 干涉
+invoke: 调用
+take place: 发生
+potentially: 潜在地
+from scratch: 从头开始
+subsequently: 随后
+conversion: 转换
+refer to: 参考
+in the context of: 在...的背景下
+extensive: 广泛的
+parenthesis: 括号
+refine: 优化
+straightforward: 直接的
+the sake of: 为了
+along with: 与...一起
+bypass: 绕过
+as noted earlier: 如前所述
+realize: 实现
+utility: 效用
+undergo: 经历
+sophisticated: 复杂的
+upon: 在...之上

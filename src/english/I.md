@@ -1,15 +1,25 @@
 # I
 
-> ==In fact== 实际上
+## in fact: 实际上
 
-I said i was busy, but in fact, I just didn't want to go.
+I thought it was going to rain, but in fact, the weather turned out to be sunny.
 
-> ==it suddenly dawned on me== 突然明白
+我以为会下雨，但事实上，天气变得晴朗。
 
-It suddenly dawned on me how to solve it.
+## it suddenly dawned on me: 突然明白
 
-> ==If== it rains tomorrow, ==then== we'll have to cancel our picnic. 如果...那么
+It wasn't until I read the article twice that it suddenly dawned on me what the author was trying to convey.
 
-If we do not have enough resources, then our plan will be delayed.
+直到我读了这篇文章两次，才突然明白作者想要表达的意思。
 
-> ==It's as simple as that.== 就这么简单
+## If...then: 如果...那么
+
+If he doesn't arrive on time, then we'll start the meeting without him.
+
+如果他没按时到达，我们将会开始会议而不等他。
+
+## It's as simple as that: 就这么简单
+
+Understanding this concept in physics may seem complex, but once you grasp the basics, it's as simple as that.
+
+理解这个物理概念可能看起来很复杂，但一旦掌握了基本知识，就会变得非常简单。

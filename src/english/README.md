@@ -5,11 +5,6 @@ index: false
 ---
 
 生词：
-
-
-
-
-
 Reactive: 响应式
 under the hood: 在后台
 robust: 健壮的

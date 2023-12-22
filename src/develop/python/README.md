@@ -1,6 +1,7 @@
 ---
 title: Python
 index: false
+icon: fa-brands fa-python
 dir:
   link: true
 ---

@@ -1,6 +1,12 @@
 # G
 
-## give it another try: 再试一次
+## give it another try
+
+这是一个鼓励性的表达，意思是建议某人再次尝试某事，尤其是如果他们在第一次尝试中没有成功或遇到困难。这个表达传达了对某人的支持和鼓励，鼓励他们不要放弃，再次尝试。
+
+I couldn't solve the problem, but I'm going to give it another try tomorrow.
+
+我没能解决这个问题，但我明天会再试一次。
 
 ## give out
 

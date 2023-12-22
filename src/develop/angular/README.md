@@ -1,6 +1,7 @@
 ---
 title: Angular
 index: false
+icon: fa-brands fa-angular
 dir:
   link: true
 ---

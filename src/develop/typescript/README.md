@@ -1,6 +1,7 @@
 ---
 title: Typescript
 index: false
+icon: fa-brands fa-js-square
 dir:
   link: true
 ---

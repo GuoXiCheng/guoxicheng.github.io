@@ -250,3 +250,10 @@ utility: 效用
 undergo: 经历
 sophisticated: 复杂的
 upon: 在...之上
+guard: 保护
+dumb: 笨的
+interceptor: 拦截器
+declaratively: 声明式地
+likewise: 同样地
+refer back to: 回顾
+context-sensitive: 上下文相关的

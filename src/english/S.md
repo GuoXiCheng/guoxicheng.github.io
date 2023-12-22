@@ -1,14 +1,36 @@
 # S
 
-> We ==simply== found ways to enjoy the language learning process. 仅仅，只不过是
+## simply: 简单地
 
-I simply restarted it.
+You can simply press the button to turn on the light.
 
-> ==stay with me== 陪伴我
+你只要按下这个按钮就可以开灯。
 
-> ==stay away from me==. 离我远点
+## stay with me
 
-> ==so on, so forth== 以此类推
+通常用来请求或邀请某人继续保持陪伴，不离开或不中断。
+
+Stay with me, I'll be right back.
+
+别走开，我马上回来。
+
+## stay away from me
+
+用于强烈表达某人不希望其他人接近自己的意愿。
+
+通常在某人感到不安、不安全、不舒服或不愿与某人互动时使用。
+
+Please stay away from me, I need some space right now.
+
+请离我远点，我现在需要一些空间。
+
+## so on, so forth
+
+用来表示列举的事物还有很多，但是不一一列举了。
+
+I like all kinds of fruits, such as apples, bananas, oranges, so on, so forth.
+
+我喜欢各种各样的水果，比如苹果、香蕉、橙子等等。
 
 ## scalable: 可扩展的
 

@@ -1,10 +1,16 @@
 # E
 
-> I love it so much that I like to learn a new language ==every two years==. 每两年
+## every two years: 每两年
 
-I go back home every two weeks.
+The company conducts a performance review with its employees every two years.
 
-> ==even better== 那更好
+公司每两年对员工进行一次绩效评估。
+
+## even better: 那更好
+
+I thought the first movie was good, but the sequel was even better!
+
+我觉得第一部电影不错，但续集更好！
 
 ## efficient: 有效率的
 

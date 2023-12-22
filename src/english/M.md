@@ -1,5 +1,7 @@
 # M
 
-> And that **made me wonder** too 让我好奇
+## made me wonder: 让我好奇
 
-And you made me wonder why you didn't try it.
+Her mysterious behavior made me wonder what she was hiding.
+
+她神秘的举止让我想知道她在隐藏什么。

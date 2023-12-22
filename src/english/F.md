@@ -1,13 +1,19 @@
 # F
 
-> **find out** 查明，发现
+## find out: 查明，发现
 
-I don't know what happened, but I will find it out.
+I'll call the library to find out if the book I want is available.
 
-> his method is to start speaking **from day one**. 从一开始
+我会打电话给图书馆，看看我想要的书是否可借。
 
-I knew I shouldn't have believed you from day one.
+## from day one: 从一开始
 
-> he **figured out** how the Russian conversation usually starts. 弄明白
+I've been committed to this project from day one.
 
-I finally figured out how it runs.
+我从一开始就致力于这个项目。
+
+## figure out: 弄明白
+
+I finally figured out how to solve that math problem.
+
+我终于找到了解决那道数学题的方法。

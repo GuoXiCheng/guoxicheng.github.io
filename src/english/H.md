@@ -1,6 +1,7 @@
 # H
 
-> The one thing we all **have in common**. 有共同之处
+## have...in common: 有共同之处
 
-What do we have in common?
+They have a love of hiking in common.
 
+他们共同喜欢徒步旅行。

@@ -1,7 +1,13 @@
 # U
 
-> *Unless* we leave now, we will miss the train. 除非
+## unless: 除非
 
-It can't be wrong unless it wasn't created by me.
+I will go to the beach tomorrow unless it rains.
 
-> I'm *used to* it 我习惯了
+如果不下雨，我明天就去海滩。
+
+## used to: 习惯于
+
+They used to be good friends, but they had a falling out.
+
+他们曾经是好朋友，但后来闹翻了。

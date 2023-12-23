@@ -257,3 +257,23 @@ declaratively: 声明式地
 likewise: 同样地
 refer back to: 回顾
 context-sensitive: 上下文相关的
+inspire: 激发
+wrapper: 包装器
+afterward: 之后
+terminology: 术语
+invocation: 调用
+termination: 终止
+interfere: 干涉
+mutate: 改变
+trivial: 琐碎的
+assign: 分配
+newly: 最近地
+occurrence: 发生
+take advantage of: 利用
+realistic: 现实的
+a period of time: 一段时间
+relatively: 相对地
+additionally: 此外
+explicitly: 明确地
+moreover: 此外
+compose: 组成

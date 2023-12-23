@@ -5,16 +5,6 @@ index: false
 ---
 
 生词：
-Reactive: 响应式
-under the hood: 在后台
-robust: 健壮的
-a level of: 一定程度的
-abstraction: 抽象
-myriad: 无数的
-underlying: 底层的
-philosophy: 哲学
-productivity: 生产率
-extensible: 可扩展的
 plenty of: 大量的
 superb: 极好的
 architecture: 架构

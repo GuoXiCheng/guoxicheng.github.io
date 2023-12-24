@@ -10,7 +10,6 @@ export default navbar([
   "/design-pattern",
   "/develop",
   "/algorithm",
-  "/english",
   "/article",
   {
     text: "在线编程",

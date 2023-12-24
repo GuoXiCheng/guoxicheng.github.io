@@ -1,21 +1,20 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import knowledgeGraphPlugin from '../../../vuepress-plugin-knowledge-graph/dist/node/index.js'
-
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+import { getDirname, path } from '@vuepress/utils'
+const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
   title: "Guo's Page",
-  description: "vuepress-theme-hope 的文档演示",
+  description: "",
   
   theme,
   plugins: [
-    // knowledgeGraphPlugin({
-    //   include: [],
-    //   exclude: ['guide', 'demo', 'reading'],
-    //   excludeReadme: true
-    // })
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components')
+    }),
   ],
 
   // Enable it with pwa

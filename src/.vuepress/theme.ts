@@ -13,7 +13,7 @@ export default hopeTheme({
   //   url: "",
   // },
   editLink: false,
-  pageInfo: ["Word", "Tag"],
+  pageInfo: ["Date", "Word", "Tag"],
 
   iconAssets: "fontawesome-with-brands",
 
@@ -58,6 +58,7 @@ export default hopeTheme({
 
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      component: true,
       align: true,
       attrs: true,
       chart: true,
@@ -83,7 +84,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      // presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",

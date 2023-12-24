@@ -11,12 +11,13 @@
     "code": "ts-node"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/client": "2.0.0-rc.0",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.67",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.238",
-    "vuepress-theme-hope": "2.0.0-beta.237"
+    "vue": "^3.3.13",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.5",
+    "vuepress-theme-hope": "2.0.0-rc.5"
   }
 }

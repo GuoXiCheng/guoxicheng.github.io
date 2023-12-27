@@ -9,6 +9,15 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "Guo's Page",
   description: "",
+
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    },
+    '/en/': {
+      lang: 'en-US'
+    },
+  },
   
   theme,
   plugins: [

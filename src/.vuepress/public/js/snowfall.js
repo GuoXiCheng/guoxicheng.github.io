@@ -7,9 +7,9 @@ window.snowfallInitialized = window.snowfallInitialized || false;
 
     // 配置参数
     const snowflakeCount = 100; // 雪花数量
-    const snowflakeColor = "#fff"; // 雪花颜色
-    const snowflakeMinSize = 2; // 最小雪花大小
-    const snowflakeMaxSize = 6; // 最大雪花大小
+    const snowflakeSvgUrl = '/assets/image/snowflake.svg'; // SVG 文件的 URL
+    const snowflakeMinSize = 5; // 最小雪花大小
+    const snowflakeMaxSize = 10; // 最大雪花大小
     const snowflakeSpeed = 1; // 下落速度
 
     let canvas = document.getElementById("snowfall-canvas");
@@ -43,7 +43,8 @@ window.snowfallInitialized = window.snowfallInitialized || false;
 
     // 雪花对象
     class Snowflake {
-        constructor() {
+        constructor(image) {
+            this.image = image;
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
             this.size =
@@ -61,43 +62,29 @@ window.snowfallInitialized = window.snowfallInitialized || false;
         }
 
         draw() {
-            ctx.save();
-            ctx.translate(this.x, this.y);
-            ctx.beginPath();
+            ctx.drawImage(this.image, this.x, this.y, this.size, this.size);
+        }
+    }
 
-            for (let i = 0; i < 6; i++) {
-                ctx.lineTo(
-                    Math.cos((Math.PI / 3) * i) * this.size,
-                    Math.sin((Math.PI / 3) * i) * this.size
-                );
-                ctx.lineTo(
-                    (Math.cos((Math.PI / 3) * i + Math.PI / 6) * this.size) / 2,
-                    (Math.sin((Math.PI / 3) * i + Math.PI / 6) * this.size) / 2
-                );
+    // 加载 SVG 并创建雪花
+    const img = new Image();
+    img.onload = function () {
+        const snowflakes = [];
+        for (let i = 0; i < snowflakeCount; i++) {
+            snowflakes.push(new Snowflake(img));
+        }
+
+        // 绘制雪花
+        function drawSnowflakes() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (const snowflake of snowflakes) {
+                snowflake.move();
+                snowflake.draw();
             }
-
-            ctx.closePath();
-            ctx.fillStyle = snowflakeColor;
-            ctx.fill();
-            ctx.restore();
+            requestAnimationFrame(drawSnowflakes);
         }
-    }
 
-    // 创建雪花
-    const snowflakes = [];
-    for (let i = 0; i < snowflakeCount; i++) {
-        snowflakes.push(new Snowflake());
-    }
-
-    // 绘制雪花
-    function drawSnowflakes() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (const snowflake of snowflakes) {
-            snowflake.move();
-            snowflake.draw();
-        }
-        requestAnimationFrame(drawSnowflakes);
-    }
-
-    drawSnowflakes();
+        drawSnowflakes();
+    };
+    img.src = snowflakeSvgUrl;
 })();

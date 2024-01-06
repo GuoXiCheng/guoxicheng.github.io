@@ -1,15 +1,9 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  "/projects/",
-  "/reading/",
-  "/cloud-native/",
-  "/design-pattern",
-  "/develop",
-  "/algorithm",
-  "/article",
+  "/en/algorithm",
   {
-    text: "在线编程",
+    text: "Online Coding",
     icon: "code",
     children: [
       {

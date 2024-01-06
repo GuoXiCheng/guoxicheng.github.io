@@ -1,7 +1,9 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
+import navbarEn from "./navbar-en.js";
 import sidebar from "./sidebar.js";
 import { getDirname, path } from "@vuepress/utils";
+import sidebarEn from "./sidebar-en.js";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -25,9 +27,17 @@ export default hopeTheme({
 
   docsBranch: "master",
 
-  navbar,
+  locales: {
+    '/': {
+      navbar: navbar,
+      sidebar: sidebar
+    },
+    '/en/': {
+      navbar: navbarEn,
+      sidebar: sidebarEn
+    },
+  },
 
-  sidebar,
   sidebarSorter: "order",
   // sidebar: "heading",
 
@@ -37,7 +47,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      
+
     },
   },
 

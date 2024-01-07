@@ -1,0 +1,1 @@
+const s="/assets/image/skip-docs/click-button-on-the-screen-light.png",t="/assets/image/skip-docs/click-button-on-the-screen-dark.png",i="/assets/image/skip-docs/use-accessibility-light.png",c="/assets/image/skip-docs/use-accessibility-dark.png";export{s as _,t as a,i as b,c};

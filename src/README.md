@@ -34,14 +34,14 @@ highlights:
       - title: 使用方法介绍
         icon: robot
         details: 启用无障碍服务
-        link: /projects/SKIP-Docs/001-how-to-use.html
+        link: /projects/SKIP-Docs/how-to-use.html
 
       - title: 小米后台保活
         icon: mobile-screen
         details: 如何保证软件在后台稳定运行
-        link: /projects/SKIP-Docs/002-xiaomi.html
+        link: /projects/SKIP-Docs/xiaomi.html
       
       - title: 贡献指南
         icon: location-arrow
         details: 实现原理、核心逻辑以及如何配置
-        link: /projects/SKIP-Docs/003-contribute.html
+        link: /projects/SKIP-Docs/contribute.html

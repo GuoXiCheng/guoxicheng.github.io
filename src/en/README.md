@@ -31,15 +31,15 @@ highlights:
       - title: How To Use
         icon: robot
         details: Enable Accessibility Service
-        link: /projects/SKIP-Docs/001-how-to-use.html
+        link: /en/projects/SKIP-Docs/how-to-use.html
 
       - title: App Background Keep-Alive in MIUI
         icon: mobile-screen
         details: How to Keep App Running in Background
-        link: /projects/SKIP-Docs/002-xiaomi.html
+        link: /en/projects/SKIP-Docs/xiaomi.html
       
       - title: How To Contribute To SKIP
         icon: location-arrow
         details: Principle of realization, Core logic and How to configure
-        link: /projects/SKIP-Docs/003-contribute.html
+        link: /en/projects/SKIP-Docs/contribute.html
 

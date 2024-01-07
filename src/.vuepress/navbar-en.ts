@@ -1,6 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
+  "/en/projects/",
   "/en/algorithm",
   {
     text: "Online Coding",

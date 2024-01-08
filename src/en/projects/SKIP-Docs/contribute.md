@@ -74,13 +74,13 @@ When you select the target node, the layout structure of the node will be displa
 
 ![Application Layout Reference](/assets/image/skip-docs/layout-reference.png =300x)
 
-### Config skipTexts and skipIds
+### Configure skipTexts and skipIds
 
 `text` corresponds to `test` in the configuration file.
 
 `resourceId` corresponds to `id` in the configuration file.
 
-### Config skipBounds
+### Configure skipBounds
 
 the value of `skipBounds` needs to be calculated, and the value may look like this:
 

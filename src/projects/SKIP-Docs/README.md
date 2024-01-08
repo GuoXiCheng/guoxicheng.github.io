@@ -20,7 +20,7 @@ SKIP 是一款免费开源的安卓应用，旨在利用 Android 无障碍服务
 
 ## v2.0.0 版本下载
 
-[直接下载 v2.0.0](https://github.com/GuoXiCheng/SKIP/releases/download/v2.0.0/SKIP-v2.0.0.apk)
+[直接下载 v2.0.0](https://download.fgit.cf/GuoXiCheng/SKIP/releases/download/v2.0.0/SKIP-v2.0.0.apk)
 
 [夸克网盘下载 v2.0.0](https://pan.quark.cn/s/54c2809b1dc8)
 
@@ -28,7 +28,7 @@ SKIP 是一款免费开源的安卓应用，旨在利用 Android 无障碍服务
 
 ## v1.5 版本下载
 
-[直接下载 v1.5](https://github.com/GuoXiCheng/SKIP/releases/download/v1.5/SKIP-v1.5.apk)
+[直接下载 v1.5](https://download.fgit.cf/GuoXiCheng/SKIP/releases/download/v1.5/SKIP-v1.5.apk)
 
 [夸克网盘下载 v1.5](https://pan.quark.cn/s/d9059f871094)
 

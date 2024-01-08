@@ -1,0 +1,1 @@
+const s="/assets/image/tiny-crud-docs/github.svg",t="/assets/image/tiny-crud-docs/gitlab.svg",a="/assets/image/tiny-crud-docs/gitee.svg",i="/assets/image/tiny-crud-docs/wechat.svg";export{s as _,t as a,a as b,i as c};

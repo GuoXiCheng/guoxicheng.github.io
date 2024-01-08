@@ -20,7 +20,7 @@ SKIP is a free and open source Android application, which aims to help users qui
 
 ## v2.0.0 version download
 
-[Github Download v2.0.0](https://github.com/GuoXiCheng/SKIP/releases/download/v2.0.0/SKIP-v2.0.0.apk)
+[Github Download v2.0.0](https://download.fgit.cf/GuoXiCheng/SKIP/releases/download/v2.0.0/SKIP-v2.0.0.apk)
 
 [Quark Web Disk Download v2.0.0](https://pan.quark.cn/s/54c2809b1dc8)
 
@@ -28,7 +28,7 @@ SKIP is a free and open source Android application, which aims to help users qui
 
 ## v1.5 version download
 
-[Github Download v1.5](https://github.com/GuoXiCheng/SKIP/releases/download/v1.5/SKIP-v1.5.apk)
+[Github Download v1.5](https://download.fgit.cf/GuoXiCheng/SKIP/releases/download/v1.5/SKIP-v1.5.apk)
 
 [Quark Web Disk Download v1.5](https://pan.quark.cn/s/d9059f871094)
 

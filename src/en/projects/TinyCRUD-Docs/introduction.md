@@ -59,9 +59,3 @@ TinyCRUD is suitable for small teams or personal projects that need simple and l
         </td>
     </tr>
 </table>
-
-## Installation
-
-```bash
-npm install tiny-crud
-```

@@ -61,6 +61,46 @@ export default {
 
 在`package.json`文件中添加`"type": "module"`，以指示 NodeJS 将 js 文件视为 ES 模块。
 
+## 合并类型声明文件
+
+安装`rollup-plugin-dts`插件用于合并类型声明文件：
+
+```bash
+npm install --save-dev rollup-plugin-dts
+```
+
+修改`tsconfig.json`文件：
+
+```json
+{
+  "compilerOptions": {
+    // ...
+
+    "declaration": true,
+    "declarationDir": "./dist/types", // 指定类型声明文件的输出目录
+    // ...
+  }
+}
+```
+
+修改`rollup.config.js`文件：
+
+```js
+import dts from "rollup-plugin-dts";
+
+export default [
+    {
+      // ...
+    },
+    /* 单独生成声明文件 */
+    {
+        input: "dist/types/index.d.ts",
+        output: [{ file: "dist/index.d.ts", format: "es" }],
+        plugins: [dts()],
+    },
+];
+```
+
 ## 添加构建命令
 
 安装`rimraf`用于在构建前清除`dist`目录：
@@ -92,10 +132,18 @@ npm install --save-dev jest ts-jest @types/jest
 
 ```javascript
 export default {
+    testTimeout: 30000, // 设置测试超时时间
     preset: "ts-jest",
     testEnvironment: "node",
     collectCoverage: true, // 开启测试覆盖率
-    coverageDirectory: "coverage" // 指定覆盖率报告输出目录
+    coverageDirectory: "coverage", // 指定覆盖率报告输出目录
+    collectCoverageFrom: [ // 指定需要收集覆盖率的文件
+        "src/**/*.ts", // 包括 src 目录下所有的 TypeScript 文件
+        "!src/**/*.d.ts", // 排除 TypeScript 声明文件
+        "!src/__tests__/**/*.ts"
+    ],
+    testMatch: ["<rootDir>/src/__tests__/*.test.ts"], // 指定测试文件的匹配规则
+    testPathIgnorePatterns: [] // 指定需要忽略的测试文件
 }
 ```
 
@@ -115,14 +163,14 @@ test('description of your test', () => {
 ```json
 {
     "scripts": {
-        "test": "jest"
+        "test": "jest --coverage"
     }
 }
 ```
 
 使用`npm run test`命令执行测试，并在指定的`coverage`目录中会生成测试覆盖率报告。
 
-## 发布 npm 库
+## 构建 npm 库
 
 首先确保在`package.json`文件中添加
 - `"main": "dist/bundle.cjs.js"`指向CommonJS版本的入口点。
@@ -131,6 +179,12 @@ test('description of your test', () => {
 - `"files": ["dist"]`指定发布的文件。
 
 然后在每次发布前先执行`npm run build`命令构建最新版本的库，再手动修改`package.json`文件中的`version`字段。遵循[语义化版本控制](https://semver.org/)。
+
+## 测试构建后的库
+
+在根目录下执行`npm pack`命令，将会在根目录下生成一个`*.tgz`文件，然后在另一个项目中使用`npm install <path-to-tgz-file>`命令安装该库。
+
+## 发布 npm 库
 
 使用`npm login`命令登录到公共镜像仓库，如果是私有镜像仓库，可以在根目录下新建`.npmrc`文件，添加`registry`字段指向私有镜像仓库地址，例如：`registry=https://npm.example.com`。
 

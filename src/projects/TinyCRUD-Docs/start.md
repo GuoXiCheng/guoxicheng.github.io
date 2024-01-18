@@ -36,7 +36,7 @@ npm install tiny-crud
 import axios from "axios";
 import { createRequest } from "tiny-crud";
 
-const githubRequest = createRequest({
+const GithubRequest = createRequest({
     httpLib: "axios",
     httpClient: axios,
     accessToken: "Your Personal Access Token",

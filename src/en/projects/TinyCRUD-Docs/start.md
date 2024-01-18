@@ -36,7 +36,7 @@ If you are in Node/Web environment, you can use the following code to create a r
 import axios from "axios";
 import { createRequest } from "tiny-crud";
 
-const githubRequest = createRequest({
+const GithubRequest = createRequest({
     httpLib: "axios",
     httpClient: axios,
     accessToken: "Your Personal Access Token",

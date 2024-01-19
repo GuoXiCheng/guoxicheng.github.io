@@ -6,7 +6,7 @@ window.snowfallInitialized = window.snowfallInitialized || false;
     window.snowfallInitialized = true;
 
     // 配置参数
-    const snowflakeCount = 100; // 雪花数量
+    const snowflakeCount = 25; // 雪花数量
     const snowflakeSvgUrl = '/assets/image/snowflake.svg'; // SVG 文件的 URL
     const snowflakeMinSize = 5; // 最小雪花大小
     const snowflakeMaxSize = 10; // 最大雪花大小

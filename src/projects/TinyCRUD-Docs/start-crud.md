@@ -28,10 +28,11 @@ export interface UserModel extends BaseModel {
 
 ```ts
 import { GithubRepository } from "tiny-crud";
+import { githubRequest } from "./github-request";
 
 export class UserRepository extends GithubRepository<UserModel> {
     constructor() {
-        super(GithubRequest, "Your Issue Number");
+        super(githubRequest, "Your Issue Number");
     }
 }
 ```
@@ -40,10 +41,11 @@ export class UserRepository extends GithubRepository<UserModel> {
 
 ```ts
 import { GiteeRepository } from "tiny-crud";
+import { githubRequest } from "./github-request";
 
 export class UserRepository extends GiteeRepository<UserModel> {
     constructor() {
-        super(GithubRequest, "Your Issue Number");
+        super(githubRequest, "Your Issue Number");
     }
 }
 ```

@@ -2,7 +2,7 @@
 index: false
 ---
 
-# 起步
+# 创建请求
 
 ## 安装 TinyCRUD
 
@@ -12,17 +12,30 @@ npm install tiny-crud
 
 ## 创建 Issue
 
-登入 Gitee/Github/Gitlab，选择一个合适的项目，创建一个 Issue，用于存放数据。
+登入你的 Gitee/Github/Gitlab，选择一个合适的项目，创建一个 Issue，用于存放数据。
 
 ## 创建请求
 
-### 准备访问令牌
+### 准备个人访问令牌
 
-[Gitee 个人访问令牌](http://www.baidu.com/s?wd=Gitee个人访问令牌)
-
-[Github 个人访问令牌](http://www.baidu.com/s?wd=Github个人访问令牌)
-
-[Gitlab 个人访问令牌](http://www.baidu.com/s?wd=Gitlab个人访问令牌)
+<table>
+  <tr>
+    <th>平台</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Github</td>
+    <td><a href="http://www.baidu.com/s?wd=Gitee个人访问令牌">如何取得个人访问令牌</a></td>
+  </tr>
+  <tr>
+    <td>Gitlab</td>
+    <td><a href="http://www.baidu.com/s?wd=Gitee个人访问令牌">如何取得个人访问令牌</a></td>
+  </tr>
+  <tr>
+    <td>Gitee</td>
+    <td><a href="http://www.baidu.com/s?wd=Gitee个人访问令牌">如何取得个人访问令牌</a></td>
+  </tr>
+</table>
 
 ### 创建请求对象
 
@@ -47,6 +60,22 @@ const GithubRequest = createRequest({
 });
 ```
 
+@tab gitlab
+
+```ts
+import axios from "axios";
+import { createRequest } from "tiny-crud";
+
+const gitlabRequest = createRequest({
+    httpLib: "axios",
+    httpClient: axios,
+    accessToken: "Your Personal Access Token",
+
+    platform: "gitlab",
+    projectId: "Your Project ID",
+});
+```
+
 @tab gitee
 
 ```ts
@@ -61,22 +90,6 @@ const giteeRequest = createRequest({
     platform: "gitee",
     owner: "Your Owner",
     repo: "Your Repo",
-});
-```
-
-@tab gitlab
-
-```ts
-import axios from "axios";
-import { createRequest } from "tiny-crud";
-
-const gitlabRequest = createRequest({
-    httpLib: "axios",
-    httpClient: axios,
-    accessToken: "Your Personal Access Token",
-
-    platform: "gitlab",
-    projectId: "Your Project ID",
 });
 ```
 
@@ -124,9 +137,26 @@ TinyCRUD 中使用的官方 API 地址参考如下：
 
 | 平台   | API 地址                 |
 | ------ | ------------------------ |
-| Gitee  | `https://gitee.com`      |
-| Gitlab | `https://gitlab.com`     |
 | Github | `https://api.github.com` |
+| Gitlab | `https://gitlab.com`     |
+| Gitee  | `https://gitee.com`      |
+
+你可以为该请求对象提供一个 Issue 编号，这样 TinyCRUD 将会使用该 Issue 存储数据：
+
+```ts {11}
+const githubRequest = createRequest({
+    httpLib: "axios",
+    httpClient: axios,
+    accessToken: "Your Personal Access Token",
+
+    platform: "github",
+    owner: "Your Owner",
+    repo: "Your Repo",
+    baseURL: "https://your-github-api.com",
+
+    issueNumber: "Your Issue Number"
+});
+```
 
 ## 验证授权
 

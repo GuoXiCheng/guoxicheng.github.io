@@ -165,3 +165,68 @@ this.githubRequest.authenticate().then((res) => {
     console.log(res);
 });
 ```
+
+## Use Encrypt
+
+If useEncrypt is true, TinyCRUD will encrypt the data before storing it in the issue, and decrypt it when reading it.
+
+So, you must implement the encrypt/decrypt function when the useEncrypt is true.TinyCRUD will use the encrypt/decrypt function to encrypt/decrypt the data.
+
+For example, you can use the following code to encrypt/decrypt data with crypto-js:
+
+```ts
+import CryptoJS from "crypto-js";
+
+const githubRequest = createRequest({
+    httpLib: "axios",
+    httpClient: axios,
+    accessToken: "Your Personal Access Token",
+
+    platform: "github",
+    owner: "Your Owner",
+    repo: "Your Repo",
+
+    useEncrypt: true,
+    encryptFn: (data: string) => {
+        return CryptoJS.AES.encrypt(data, "Your Secret Key").toString();
+    },
+    decryptFn: (data: string) => {
+        return CryptoJS.AES.decrypt(data, "Your Secret Key").toString(
+            CryptoJS.enc.Utf8
+        );
+    },
+});
+```
+
+> [!tip]
+> Install crypto-js to encrypt/decrypt data
+>
+> ```bash
+> npm i crypto-js
+>
+
+The encrypt/decrypt function will be ignored when useEncrypt is false.
+
+So, you can choose whether to use encryption or not, depending on your environment.
+
+```ts
+const githubRequest = createRequest({
+    httpLib: "axios",
+    httpClient: axios,
+    accessToken: "Your Personal Access Token",
+
+    platform: "github",
+    owner: "Your Owner",
+    repo: "Your Repo",
+
+    useEncrypt: process.env.NODE_ENV === "production",
+    encryptFn: (data: string) => {
+        return CryptoJS.AES.encrypt(data, "Your Secret Key").toString();
+    },
+    decryptFn: (data: string) => {
+        return CryptoJS.AES.decrypt(data, "Your Secret Key").toString(
+            CryptoJS.enc.Utf8
+        );
+    },
+});
+```

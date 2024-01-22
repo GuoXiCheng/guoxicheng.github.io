@@ -1,8 +1,8 @@
 ---
-index: false
+index: true
 ---
 
-# Start CRUD
+# Start Using
 
 ## Create Data Model
 

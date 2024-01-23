@@ -4,6 +4,9 @@ dir:
   link: true
 ---
 
+<p>
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD"/> <img alt="license" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov branch" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a></p>
+
 # TinyCRUD 介绍
 
 ## 基本介绍
@@ -30,13 +33,13 @@ TinyCRUD 适合用于满足小型团队或个人项目中需要简单、轻量�
     </tr>
     <tr>
         <td>
-            API latest ✔
+            Github API latest
         </td>
         <td>
-            API v4 ✔
+            Gitlab API v4
         </td>
         <td>
-            API v5 ✔
+            Gitee API v5
         </td>
     </tr>
 </table>
@@ -54,10 +57,10 @@ TinyCRUD 适合用于满足小型团队或个人项目中需要简单、轻量�
     </tr>
     <tr>
         <td>
-            axios ✔
+            axios
         </td>
         <td>
-            wx（微信小程序） ✔
+            wx（微信小程序）
         </td>
     </tr>
 </table>

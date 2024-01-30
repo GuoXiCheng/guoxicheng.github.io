@@ -1,5 +1,6 @@
 ---
 index: true
+order: 2
 ---
 
 # 开始使用

@@ -40,6 +40,11 @@ highlights:
         icon: gamepad
         details: 具体操作及使用方法介绍
         link: /projects/TinyCRUD-Docs/start-using
+      
+      - title: 贡献指南
+        icon: location-arrow
+        details: 项目结构、核心逻辑介绍
+        link: /projects/TinyCRUD-Docs/contribution-guide
 
   - header: SKIP
     description: 自动跳过APP开屏广告<p><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP"/> <img alt="GitHub" src="https://img.shields.io/github/license/GuoXiCheng/SKIP"/> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total"/> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg"/></a></p>

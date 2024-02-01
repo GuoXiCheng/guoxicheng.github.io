@@ -35,3 +35,4 @@ SKIP 是一款免费开源的安卓应用，旨在利用 Android 无障碍服务
 [百度网盘下载 v1.5](https://pan.baidu.com/s/1PaDWDXcczqDJHdz9h8lQ7A?pwd=h3pf)
 
 
+<img src="/assets/svg/badge-skip.svg" />

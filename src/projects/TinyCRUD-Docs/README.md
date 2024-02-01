@@ -4,8 +4,7 @@ dir:
   link: true
 ---
 
-<p>
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD"/> <img alt="NPM Downloads" src="https://img.shields.io/npm/dw/tiny-crud"/> <img alt="license" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov branch" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a></p>
+<object data="/assets/html/badge-tiny-crud.html" width="100%" height="60"></object>
 
 # TinyCRUD 介绍
 

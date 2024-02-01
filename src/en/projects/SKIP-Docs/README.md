@@ -4,7 +4,7 @@ dir:
   link: true
 ---
 
-<p><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP"/> <img alt="GitHub" src="https://img.shields.io/github/license/GuoXiCheng/SKIP"/> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total"/> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg"/></a></p>
+<object data="/assets/html/badge-skip.html" width="100%" height="50"></object>
 
 # Introduction of SKIP
 

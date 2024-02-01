@@ -21,7 +21,7 @@ actions:
 
 highlights:
   - header: TinyCRUD
-    description: 基于Issue API的轻量级数据存储库<p><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD"/> <img alt="NPM Downloads" src="https://img.shields.io/npm/dw/tiny-crud"/> <img alt="license" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov branch" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a></p>
+    description: 基于Issue API的轻量级数据存储库<object data="/assets/html/badge-tiny-crud.html" width="100%" height="60"></object>
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg
     image: /assets/image/tiny-crud-docs/tiny-crud-icon.png
@@ -47,7 +47,7 @@ highlights:
         link: /projects/TinyCRUD-Docs/contribution-guide
 
   - header: SKIP
-    description: 自动跳过APP开屏广告<p><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP"/> <img alt="GitHub" src="https://img.shields.io/github/license/GuoXiCheng/SKIP"/> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total"/> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg"/></a></p>
+    description: 自动跳过APP开屏广告<object data="/assets/html/badge-skip.html" width="100%" height="50"></object>
     image: /assets/image/skip-docs/skip-icon.png
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg

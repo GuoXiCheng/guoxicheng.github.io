@@ -4,7 +4,7 @@ dir:
   link: true
 ---
 
-<p><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP"/> <img alt="GitHub" src="https://img.shields.io/github/license/GuoXiCheng/SKIP"/> <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total"/> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg"/></a></p>
+<object data="/assets/html/badge-skip.html" width="100%" height="50"></object>
 
 # SKIP 介绍
 
@@ -33,6 +33,3 @@ SKIP 是一款免费开源的安卓应用，旨在利用 Android 无障碍服务
 [夸克网盘下载 v1.5](https://pan.quark.cn/s/d9059f871094)
 
 [百度网盘下载 v1.5](https://pan.baidu.com/s/1PaDWDXcczqDJHdz9h8lQ7A?pwd=h3pf)
-
-
-<img src="/assets/svg/badge-skip.svg" />

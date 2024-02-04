@@ -4,7 +4,6 @@ dir:
   link: true
 ---
 
-<object data="/assets/html/badge-skip.html" width="100%" height="50"></object>
 
 # SKIP 介绍
 

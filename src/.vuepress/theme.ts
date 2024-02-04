@@ -21,7 +21,7 @@ export default hopeTheme({
 
   logo: "/logo.png",
 
-  repo: "GuoXiCheng/guoxicheng.github.io",
+  repo: "GuoXiCheng",
 
   docsDir: "src",
 

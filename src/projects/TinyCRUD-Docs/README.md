@@ -4,8 +4,6 @@ dir:
   link: true
 ---
 
-<object data="/assets/html/badge-tiny-crud.html" width="100%" height="60"></object>
-
 # TinyCRUD 介绍
 
 ## 基本介绍

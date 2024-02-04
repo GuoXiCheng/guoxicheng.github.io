@@ -21,7 +21,7 @@ actions:
 
 highlights:
   - header: TinyCRUD
-    description: 基于Issue API的轻量级数据存储库<object data="/assets/html/badge-tiny-crud.html" width="100%" height="60"></object>
+    description: 基于Issue API的轻量级数据存储库<p><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="NPM Weekly Downloads" src="https://img.shields.io/npm/dw/tiny-crud" /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="Github TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a></p>
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg
     image: /assets/image/tiny-crud-docs/tiny-crud-icon.png
@@ -47,7 +47,7 @@ highlights:
         link: /projects/TinyCRUD-Docs/contribution-guide
 
   - header: SKIP
-    description: 自动跳过APP开屏广告<object data="/assets/html/badge-skip.html" width="100%" height="50"></object>
+    description: 自动跳过APP开屏广告<p><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/SKIP" /> <img alt="GitHub Releases Downloads" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total" /> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="GitHub SKIP" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg" /></a></p>
     image: /assets/image/skip-docs/skip-icon.png
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg

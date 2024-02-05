@@ -18,7 +18,7 @@ actions:
 
 highlights:
   - header: TinyCRUD
-    description: Lightweight Data Repository Based on Issue API<p><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="NPM Weekly Downloads" src="https://img.shields.io/npm/dw/tiny-crud" /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="Github TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a></p>
+    description: Lightweight Data Repository Based on Issue API<br/> <br/><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="NPM Weekly Downloads" src="https://img.shields.io/npm/dw/tiny-crud" /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="Github TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a>
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg
     image: /assets/image/tiny-crud-docs/tiny-crud-icon.png
@@ -44,7 +44,7 @@ highlights:
         link: /en/projects/TinyCRUD-Docs/contribution-guide
 
   - header: SKIP
-    description: Automatically Skip App Start Page Ads<p><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/SKIP" /> <img alt="GitHub Releases Downloads" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total" /> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="GitHub SKIP" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg" /></a></p>
+    description: Automatically Skip App Start Page Ads<br/> <br/><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/SKIP" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/SKIP" /> <img alt="GitHub Releases Downloads" src="https://img.shields.io/github/downloads/GuoXiCheng/SKIP/total" /> <a href="https://github.com/GuoXiCheng/SKIP"><img alt="GitHub SKIP" src="https://img.shields.io/badge/GitHub-SKIP-blue.svg" /></a>
     image: /assets/image/skip-docs/skip-icon.png
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg

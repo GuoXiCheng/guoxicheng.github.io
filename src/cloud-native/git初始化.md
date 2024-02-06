@@ -12,6 +12,10 @@ git config --global user.email "email@example.com"
 
 ## 配置Git存储库SSH密钥
 
+右击桌面，选择 **Git Bash Here**，打开Git Bash命令行窗口执行以下命令
+
+![](/assets/image/cloud-native/git-menu.png)
+
 ```bash title="进入ssh目录"
 cd ~/.ssh
 ```
@@ -19,6 +23,7 @@ cd ~/.ssh
 ```bash title="列出ssh目录下的文件"
 ls
 ```
+
 确定是否存在`id_rsa`和`id_rsa.pub`文件
 
 如果不存在

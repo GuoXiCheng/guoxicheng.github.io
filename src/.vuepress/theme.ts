@@ -114,7 +114,7 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true
     },
-
+/*
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
@@ -164,7 +164,7 @@ export default hopeTheme({
         ],
       },
     },
-
+*/
     git: {
       contributors: false,
       updatedTime: true,

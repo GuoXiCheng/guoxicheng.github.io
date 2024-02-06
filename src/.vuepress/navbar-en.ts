@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/en/projects/",
-  "/en/algorithm",
+  "/en/algorithm/",
   {
     text: "Online Coding",
     icon: "code",

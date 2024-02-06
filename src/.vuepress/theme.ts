@@ -169,6 +169,7 @@ export default hopeTheme({
       contributors: false,
       updatedTime: true,
       createdTime: true
-    }
+    },
+    search: true
   },
 });

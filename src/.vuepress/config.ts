@@ -8,8 +8,7 @@ const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   head: [
-    ['script', { src: '/js/snowfall.js', async: true }],
-    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }]
+    ['script', { src: '/js/snowfall.js', async: true }]
   ],
   base: "/",
 

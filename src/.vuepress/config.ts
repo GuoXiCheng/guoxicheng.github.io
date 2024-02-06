@@ -3,8 +3,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { getDirname, path } from '@vuepress/utils'
-import { pwaPlugin } from '@vuepress/plugin-pwa'
-import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
+
 const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
@@ -31,9 +30,7 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components')
-    }),
-    pwaPlugin(),
-    pwaPopupPlugin()
+    })
   ],
 
   // Enable it with pwa

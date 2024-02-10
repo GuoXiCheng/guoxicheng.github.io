@@ -41,7 +41,7 @@ export default hopeTheme({
   sidebarSorter: "order",
   // sidebar: "heading",
 
-  footer: "————到底了————",
+  footer: "Made With vuepress-theme-hope <br/> Copyright © 2023-present GuoXiCheng",
 
   displayFooter: true,
 

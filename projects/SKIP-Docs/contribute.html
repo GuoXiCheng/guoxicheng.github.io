@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.6" />
-    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.22" />
+    <meta name="generator" content="VuePress 2.0.0-rc.7" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.24" />
     <style>
       html {
         background: var(--bg-color, #fff);
@@ -29,8 +29,8 @@
       }
     </script>
     <link rel="alternate" hreflang="en-us" href="https://guoxicheng.top/en/projects/SKIP-Docs/contribute.html"><meta property="og:url" content="https://guoxicheng.top/projects/SKIP-Docs/contribute.html"><meta property="og:site_name" content="Guo's Page"><meta property="og:title" content="贡献指南参考"><meta property="og:description" content="贡献指南参考 实现原理 利用Android无障碍服务，获取当前窗口对象，遍历窗口节点，当节点符合指定条件时，执行点击的动作。 核心逻辑 配置文件选项 配置文件位置：配置文件 packageName 应用包名 在SKIP的应用白名单中，可以查看应用的包名。 skipTexts 根据文本匹配，当节点的文本包含指定字符串时，执行点击动作。可以配置多组。 在手..."><meta property="og:type" content="article"><meta property="og:image" content="https://guoxicheng.top/assets/image/skip-docs/layout-reference.png =300x"><meta property="og:locale" content="zh-CN"><meta property="og:locale:alternate" content="en-US"><meta property="og:updated_time" content="2024-01-07T14:51:11.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image:alt" content="贡献指南参考"><meta property="article:modified_time" content="2024-01-07T14:51:11.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"贡献指南参考","image":["https://guoxicheng.top/assets/image/skip-docs/layout-reference.png =300x","https://guoxicheng.top/assets/image/skip-docs/android-rect.png =300x"],"dateModified":"2024-01-07T14:51:11.000Z","author":[]}</script><script src="/js/snowfall.js" async></script><link rel="icon" href="/favicon.ico"><link rel="icon" href="/assets/icon/chrome-mask-512.png" type="image/png" sizes="512x512"><link rel="icon" href="/assets/icon/chrome-mask-192.png" type="image/png" sizes="192x192"><link rel="icon" href="/assets/icon/chrome-512.png" type="image/png" sizes="512x512"><link rel="icon" href="/assets/icon/chrome-192.png" type="image/png" sizes="192x192"><link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials"><meta name="theme-color" content="#000000"><link rel="apple-touch-icon" href="/assets/icon/chrome-mask-512.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="msapplication-TileImage" content="/assets/icon/chrome-mask-512.png"><meta name="msapplication-TileColor" content="#000000"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"><title>贡献指南参考 | Guo's Page</title><meta name="description" content="贡献指南参考 实现原理 利用Android无障碍服务，获取当前窗口对象，遍历窗口节点，当节点符合指定条件时，执行点击的动作。 核心逻辑 配置文件选项 配置文件位置：配置文件 packageName 应用包名 在SKIP的应用白名单中，可以查看应用的包名。 skipTexts 根据文本匹配，当节点的文本包含指定字符串时，执行点击动作。可以配置多组。 在手...">
-    <link rel="preload" href="/assets/style-O2JyTpPJ.css" as="style"><link rel="stylesheet" href="/assets/style-O2JyTpPJ.css">
-    <link rel="modulepreload" href="/assets/app-4_j_g56y.js"><link rel="modulepreload" href="/assets/contribute.html-TflbS2iy.js"><link rel="modulepreload" href="/assets/android-rect-d4rCRbA8.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-x3n3nnut.js">
+    <link rel="preload" href="/assets/style-BjEYzU0e.css" as="style"><link rel="stylesheet" href="/assets/style-BjEYzU0e.css">
+    <link rel="modulepreload" href="/assets/app-Cxays021.js"><link rel="modulepreload" href="/assets/contribute.html-C0TVERDi.js"><link rel="modulepreload" href="/assets/android-rect-rdWkx8Q9.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-DlAUqK2U.js">
     
   </head>
   <body>
@@ -46,6 +46,6 @@
     <span class="token punctuation">-</span> <span class="token key atrule">bound</span><span class="token punctuation">:</span> <span class="token number">1223</span><span class="token punctuation">,</span><span class="token number">196</span><span class="token punctuation">,</span><span class="token number">1384</span><span class="token punctuation">,</span><span class="token number">308</span>
       <span class="token key atrule">resolution</span><span class="token punctuation">:</span> <span class="token number">1440</span><span class="token punctuation">,</span><span class="token number">3024</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其中的1440,3024是你当前手机屏幕的最大宽高。</p><p>其中的1223,196,1384,308分别表示一个节点在屏幕中的: left,top,right,bottom</p><p>参考上图中rect的信息: left=x,top=y,right=x+width,bottom=y+height</p><figure><img src="/assets/image/skip-docs/android-rect.png" alt="Android屏幕节点布局" width="300" tabindex="0" loading="lazy"><figcaption>Android屏幕节点布局</figcaption></figure></div><!--[--><!----><!--]--><footer class="page-meta"><!----><div class="meta-item git-info"><div class="update-time"><span class="label">上次编辑于: </span><!----></div><!----></div></footer><nav class="vp-page-nav"><a class="route-link nav-link prev" href="/projects/SKIP-Docs/xiaomi.html" aria-label="小米后台保活"><div class="hint"><span class="arrow start"></span>上一页</div><div class="link"><!---->小米后台保活</div></a><!----></nav><!----><!--[--><!----><!--]--><!--]--></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">Made With vuepress-theme-hope <br/> Copyright © 2023-present GuoXiCheng</div><!----></footer></div><!--]--><!--[--><!----><!----><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-4_j_g56y.js" defer></script>
+    <script type="module" src="/assets/app-Cxays021.js" defer></script>
   </body>
 </html>

@@ -2,7 +2,6 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
-import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
 import { removePWAPlugin } from '@vuepress/plugin-remove-pwa'
 import { getDirname, path } from '@vuepress/utils'
 
@@ -10,7 +9,8 @@ const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   head: [
-    ['script', { src: '/js/snowfall.js', async: true }]
+    ['script', { src: '/js/snowfall.js', async: true }],
+    ['script', { src: '/js/baidu-analytics.js', async: true }]
   ],
   base: "/",
 
@@ -31,9 +31,6 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components')
-    }),
-    baiduAnalyticsPlugin({
-      id: 'e726df262db168d0554e45d33eee04c8'
     }),
     removePWAPlugin({
     })

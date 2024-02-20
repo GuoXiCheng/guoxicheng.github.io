@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-baidu-analytics": "^2.0.0-rc.15",
     "@vuepress/plugin-register-components": "2.0.0-rc.15",
     "@vuepress/plugin-remove-pwa": "^2.0.0-rc.15",
     "mermaid": "^10.6.1",

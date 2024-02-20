@@ -3,6 +3,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
+import { removePWAPlugin } from '@vuepress/plugin-remove-pwa'
 import { getDirname, path } from '@vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
@@ -33,6 +34,8 @@ export default defineUserConfig({
     }),
     baiduAnalyticsPlugin({
       id: 'e726df262db168d0554e45d33eee04c8'
+    }),
+    removePWAPlugin({
     })
   ],
 

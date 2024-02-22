@@ -1,5 +1,9 @@
 # Git 初始化
 
+## Git安装
+
+[Git官网](https://git-scm.com/)下载安装包，安装过程中一直点击下一步即可。
+
 ## Git基本全局配置
 
 ```bash title="配置用户名"

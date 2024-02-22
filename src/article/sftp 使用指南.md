@@ -51,3 +51,13 @@ put [本地目录] [远程目录]
 ```bash
 exit
 ```
+
+## 删除旧的公钥记录
+
+当连接的服务器公钥发生变化时，尝试连接时会报错，需要删除旧的公钥记录。
+
+```bash
+ssh-keygen -R [hostname-or-IP-address]
+
+# 例如：ssh-keygen -R 192.168.0.1
+```

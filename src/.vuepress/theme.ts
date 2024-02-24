@@ -41,7 +41,7 @@ export default hopeTheme({
   sidebarSorter: "order",
   // sidebar: "heading",
 
-  footer: "Made With vuepress-theme-hope <br/> Copyright © 2023-present GuoXiCheng",
+  footer: "Made With <a href='https://github.com/vuepress-theme-hope/vuepress-theme-hope' target='_blank'>vuepress-theme-hope</a> Theme <br/> Copyright © 2023-present GuoXiCheng",
 
   displayFooter: true,
 

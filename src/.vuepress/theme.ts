@@ -41,7 +41,7 @@ export default hopeTheme({
   sidebarSorter: "order",
   // sidebar: "heading",
 
-  footer: "Made With vuepress-theme-hope <br/> Copyright © 2023-present GuoXiCheng",
+  footer: "Made With <a href='https://github.com/vuepress-theme-hope/vuepress-theme-hope' target='_blank'>vuepress-theme-hope</a> Theme <br/> Copyright © 2023-present GuoXiCheng",
 
   displayFooter: true,
 
@@ -57,13 +57,19 @@ export default hopeTheme({
   // },
 
   plugins: {
-    // You should generate and use your own comment service
+    prismjs: {
+      light: "one-dark"
+    },
+
     comment: {
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: 'Giscus',
+      repo: 'GuoXiCheng/guoxicheng.github.io',
+      repoId: 'MDEwOlJlcG9zaXRvcnkyNTQ1Nzk0ODc=',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDODyyTH84Cdco8',
+      strict: true,
+      lazyLoading: true,
+      reactionsEnabled: true,
     },
 
     // All features are enabled for demo, only preserve features you need here

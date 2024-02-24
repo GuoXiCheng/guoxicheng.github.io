@@ -2,8 +2,9 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
-import { removePWAPlugin } from '@vuepress/plugin-remove-pwa';
+import { removePwaPlugin } from '@vuepress/plugin-remove-pwa';
 import { getDirname, path } from '@vuepress/utils'
+import { redirectPlugin } from '@vuepress/plugin-redirect';
 
 const __dirname = getDirname(import.meta.url)
 
@@ -32,8 +33,13 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components')
     }),
-    removePWAPlugin({
+    removePwaPlugin({
     }),
+    redirectPlugin({
+      config: {
+        '/SKIP-Docs/1-introduction.html': '/projects/SKIP-Docs/'
+      }
+    })
   ],
 
   // Enable it with pwa

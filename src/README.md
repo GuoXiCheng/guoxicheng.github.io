@@ -16,10 +16,55 @@ actions:
     link: /projects/SKIP-Docs/
     type: primary
 
-  # - text: 文档
-  #   link: ./guide/
-
 highlights:
+  - header: Guide
+    bgImage: /assets/image/bg/2-light.svg
+    bgImageDark: /assets/image/bg/2-dark.svg
+    features:
+      - title: Android
+        icon: fa-brands fa-android
+        details: 基于Linux内核的移动端开源操作系统
+        link: /develop/android/
+      - title: Angular
+        icon: fa-brands fa-angular
+        details: 用于构建单页应用的开源Web框架
+        link: /develop/angular/
+      - title: Git
+        icon: fa-brands fa-git-alt
+        details: 分布式版本控制系统
+        link: /develop/git/
+      - title: Html&CSS
+        icon: fa-brands fa-html5
+        details: 超文本标记语言和层叠样式表
+        link: /develop/html/
+      - title: Python
+        icon: fa-brands fa-python
+        details: 一种高层次的结合了解释性、编译性、互动性和面向对象的脚本语言
+        link: /develop/python/
+      - title: React
+        icon: fa-brands fa-react
+        details: 用于构建用户界面的JavaScript库
+        link: /develop/react/
+      - title: Test
+        icon: fa-solid fa-vials
+        details: 测试相关知识
+        link: /develop/test/
+      - title: Typescript
+        icon: fa-brands fa-js-square
+        details: JavaScript的一个超集
+        link: /develop/typescript/
+      - title: docker
+        icon: fa-brands fa-docker
+        details: 一个开源的容器化平台，允许将应用及其运行环境打包在一个轻量级、可移植的容器中
+        link: /cloud-native/docker/
+      - title: kubernetes
+        icon: fa-solid fa-dharmachakra
+        details: 一个开源的容器编排平台，用于自动化容器的部署、扩展和管理
+        link: /cloud-native/kubernetes/
+      - title: argocd
+        icon: fa-brands fa-octopus-deploy
+        details: 一个开源的声明式、GitOps持续交付工具，用于自动化管理Kubernetes应用程序的部署
+        link: /cloud-native/argocd/
   - header: TinyCRUD
     description: 基于Issue API的轻量级数据存储库<br/> <br/><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/TinyCRUD" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/TinyCRUD" /> <img alt="NPM Weekly Downloads" src="https://img.shields.io/npm/dt/tiny-crud" /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/TinyCRUD/ci.yml" /> <img alt="Codecov" src="https://img.shields.io/codecov/c/github/GuoXiCheng/TinyCRUD/main" /> <a href="https://github.com/GuoXiCheng/TinyCRUD"><img alt="Github TinyCRUD" src="https://img.shields.io/badge/GitHub-TinyCRUD-blue.svg" /></a>
     bgImage: /assets/image/bg/2-light.svg

@@ -1,4 +1,11 @@
-# K8S
+---
+title: kubernetes
+index: false
+icon: fa-solid fa-dharmachakra
+dir:
+  link: true
+---
+
 ## 启停K8S命名空间下的所有部署
 
 ```bash title="停用K8S命名空间下的所有部署副本"

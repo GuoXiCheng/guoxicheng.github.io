@@ -37,7 +37,8 @@ export default defineUserConfig({
     }),
     redirectPlugin({
       config: {
-        '/SKIP-Docs/1-introduction.html': '/projects/SKIP-Docs/'
+        '/SKIP-Docs/1-introduction.html': '/projects/SKIP-Docs/',
+        '/projects/SKIP-Docs/002-xiaomi.html': '/projects/SKIP-Docs/xiaomi.html'
       }
     })
   ],

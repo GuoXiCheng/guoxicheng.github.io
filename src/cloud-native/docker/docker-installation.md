@@ -2,7 +2,7 @@
 date: 2024-02-25
 ---
 
-# docker 初始化
+# docker 的初始化
 
 ## docker 介绍
 

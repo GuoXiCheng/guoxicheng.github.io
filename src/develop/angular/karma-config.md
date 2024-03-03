@@ -1,3 +1,7 @@
+---
+date: 2023-10-18
+---
+
 # karma测试工具配置
 
 在window平台下运行时使用Chrome，在其他平台下使用ChromeNoSandboxHeadless

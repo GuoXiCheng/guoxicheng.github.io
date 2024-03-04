@@ -1,5 +1,5 @@
 ---
 title: Projects
-icon: file-code
+icon: fa-solid fa-file-code
 index: false
 ---

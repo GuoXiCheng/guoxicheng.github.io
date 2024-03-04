@@ -1,7 +1,7 @@
 ---
 title: 设计模式
 index: false
-icon: compass-drafting
+icon: fa-solid fa-compass-drafting
 ---
 
 设计模式最早由四位计算机科学家（Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides），也被称为“四人帮”，在他们的经典书籍《设计模式：可复用面向对象软件的基础》（Design Patterns: Elements of Reusable Object-Oriented Software）中正式提出。

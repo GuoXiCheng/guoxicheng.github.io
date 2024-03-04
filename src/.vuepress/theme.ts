@@ -17,7 +17,7 @@ export default hopeTheme({
   editLink: false,
   pageInfo: ["Date", "Word", "Tag"],
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: ["fontawesome-with-brands", "//at.alicdn.com/t/c/font_4381716_dtn01hmwmvf.css"],
 
   logo: "/logo.png",
 

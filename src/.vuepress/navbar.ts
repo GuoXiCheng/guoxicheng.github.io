@@ -6,6 +6,7 @@ export default navbar([
   "/develop/",
   "/cloud-native/",
   "/design-pattern/",
+  "/software-engineering/",
   "/algorithm/",
   "/reading/",
   {

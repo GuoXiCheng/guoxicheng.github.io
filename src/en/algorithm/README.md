@@ -1,5 +1,5 @@
 ---
 title: algorithm
-icon: trophy
+icon: fa-solid fa-trophy
 index: false
 ---

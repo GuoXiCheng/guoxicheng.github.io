@@ -1,5 +1,5 @@
 ---
 title: 开发
 index: false
-icon: code
+icon: fa-solid fa-code
 ---

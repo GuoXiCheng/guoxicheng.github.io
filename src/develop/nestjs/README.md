@@ -1,7 +1,7 @@
 ---
 title: NestJS
 index: false
-icon: fa-solid fa-n
+icon: iconfont icon-gxcnestjs
 date: 2024-03-03
 dir:
   link: true

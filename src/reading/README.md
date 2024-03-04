@@ -1,5 +1,5 @@
 ---
 title: 读书摘记
-icon: book
+icon: fa-solid fa-book
 index: false
 ---

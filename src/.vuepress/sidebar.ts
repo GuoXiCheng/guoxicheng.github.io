@@ -8,5 +8,6 @@ export default sidebar({
   "/design-pattern": "structure",
   "/develop": "structure",
   "/algorithm": "structure",
-  "/article": "structure"
+  "/article": "structure",
+  "/software-engineering": "structure",
 });

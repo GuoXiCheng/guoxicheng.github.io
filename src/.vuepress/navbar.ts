@@ -10,7 +10,7 @@ export default navbar([
   "/algorithm/",
   "/reading/",
   {
-    text: "在线编程",
+    text: "站外链接",
     icon: "code",
     children: [
       {
@@ -24,6 +24,10 @@ export default navbar([
       {
         text: "Mermaid",
         link: "https://mermaid.live/edit"
+      },
+      {
+        text: "NodeJS全栈",
+        link: "https://guoxicheng.top/html/markmap.html"
       }
     ]
   }

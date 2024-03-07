@@ -4,7 +4,7 @@ export default navbar([
   "/en/projects/",
   "/en/algorithm/",
   {
-    text: "Online Coding",
+    text: "External link",
     icon: "code",
     children: [
       {
@@ -18,6 +18,10 @@ export default navbar([
       {
         text: "Mermaid",
         link: "https://mermaid.live/edit"
+      },
+      {
+        text: "NodeJS Full Stack",
+        link: "https://guoxicheng.top/html/markmap.html"
       }
     ]
   }

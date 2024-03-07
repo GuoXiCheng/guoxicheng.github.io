@@ -6,7 +6,7 @@ date: 2024-03-06
 
 ![](/assets/image/software-engineering/codebase-deploys.png)
 
-## 一份基准多份部署
+## 核心思想
 
 在12-Factor APP中，一份基准代码应与一个应用保持一一对应关系，但可以存在多份部署。
 

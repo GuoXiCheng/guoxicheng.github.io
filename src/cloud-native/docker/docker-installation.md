@@ -3,7 +3,7 @@ date: 2024-02-25
 order: 2
 ---
 
-# docker 初始化
+# docker 安装
 
 ## docker 介绍
 

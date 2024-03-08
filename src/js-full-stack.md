@@ -50,18 +50,30 @@
 
 ## 软件工程
 ### 12因素应用
-#### 基准代码
-#### 依赖
-#### 配置
-#### 后端服务
-#### 构建、发布、运行
-#### 进程
-#### 端口绑定
-#### 并发
-#### 易处理
-#### 开发环境与线上环境等价
-#### 日志
-#### 管理进程
+
+- [基准代码](https://guoxicheng.top/software-engineering/twelve-factor/001-codebase.html)
+
+- [依赖](https://guoxicheng.top/software-engineering/twelve-factor/002-dependencies.html)
+
+- [配置](https://guoxicheng.top/software-engineering/twelve-factor/003-config.html)
+
+- [后端服务](https://guoxicheng.top/software-engineering/twelve-factor/004-backing-services.html)
+
+- [构建、发布、运行](https://guoxicheng.top/software-engineering/twelve-factor/005-build-release-run.html)
+
+- [进程](https://guoxicheng.top/software-engineering/twelve-factor/006-processes.html)
+
+- [端口绑定](https://guoxicheng.top/software-engineering/twelve-factor/007-port-binding.html)
+
+- [并发](https://guoxicheng.top/software-engineering/twelve-factor/008-concurrency.html)
+
+- [易处理](https://guoxicheng.top/software-engineering/twelve-factor/009-disposability.html)
+
+- [开发环境与线上环境等价](https://guoxicheng.top/software-engineering/twelve-factor/010-dev-prod-parity.html)
+
+- [日志](https://guoxicheng.top/software-engineering/twelve-factor/011-logs.html)
+
+- [管理进程](https://guoxicheng.top/software-engineering/twelve-factor/012-admin-processes.html)
 
 
 ## 设计模式（23种）

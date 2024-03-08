@@ -1,8 +1,10 @@
-# NodeJS全栈
+# JS全栈技能树
 
 ## Web
 ### HTML
 ### CSS
+#### Flex 布局
+#### Grid 布局
 
 ## NodeJS
 
@@ -22,7 +24,6 @@
 
 ## 后端
 ### Express
-### Koa
 ### NestJS
 
 ## 移动端
@@ -31,6 +32,10 @@
 
 ## 桌面端
 ### Electron
+
+## 测试
+### Jest
+### Mocha
 
 ## 云原生
 ### Docker
@@ -41,6 +46,7 @@
 #### docker 镜像构建
 
 ### Kubernetes
+### Prometheus
 
 ## 软件工程
 ### 12因素应用

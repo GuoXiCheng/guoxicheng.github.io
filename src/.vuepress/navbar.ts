@@ -27,7 +27,7 @@ export default navbar([
       },
       {
         text: "NodeJS全栈",
-        link: "https://guoxicheng.top/html/markmap.html"
+        link: "https://guoxicheng.top/html/js-full-stack.html"
       }
     ]
   }

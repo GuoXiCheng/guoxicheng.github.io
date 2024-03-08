@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.15.6/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.15.6/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.15.6/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+                const markmap = getMarkmap();
+                window.mm = markmap.Markmap.create(
+                  "svg#mindmap",
+                  (getOptions || markmap.deriveOptions)(jsonOptions),
+                  root2
+                );
+              })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"JS全栈技能树","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Web","children":[{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"HTML","children":[]},{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"CSS","children":[{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"Flex 布局","children":[]},{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"Grid 布局","children":[]}]}]},{"type":"heading","depth":1,"payload":{"lines":[8,9]},"content":"NodeJS","children":[]},{"type":"heading","depth":1,"payload":{"lines":[10,11]},"content":"数据库","children":[{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"数据库原理","children":[{"type":"heading","depth":3,"payload":{"lines":[12,13]},"content":"事务隔离级别","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"MySQL","children":[]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"PostgreSQL","children":[]},{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"MongoDB","children":[]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"Redis","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[19,20]},"content":"前端","children":[{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"Vue","children":[]},{"type":"heading","depth":2,"payload":{"lines":[21,22]},"content":"React","children":[]},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"Angular","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[24,25]},"content":"后端","children":[{"type":"heading","depth":2,"payload":{"lines":[25,26]},"content":"Express","children":[]},{"type":"heading","depth":2,"payload":{"lines":[26,27]},"content":"NestJS","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[28,29]},"content":"移动端","children":[{"type":"heading","depth":2,"payload":{"lines":[29,30]},"content":"React Native","children":[]},{"type":"heading","depth":2,"payload":{"lines":[30,31]},"content":"微信小程序","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[32,33]},"content":"桌面端","children":[{"type":"heading","depth":2,"payload":{"lines":[33,34]},"content":"Electron","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[35,36]},"content":"测试","children":[{"type":"heading","depth":2,"payload":{"lines":[36,37]},"content":"Jest","children":[]},{"type":"heading","depth":2,"payload":{"lines":[37,38]},"content":"Mocha","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[39,40]},"content":"云原生","children":[{"type":"heading","depth":2,"payload":{"lines":[40,41]},"content":"Docker","children":[{"type":"heading","depth":3,"payload":{"lines":[41,42]},"content":"docker 架构","children":[]},{"type":"heading","depth":3,"payload":{"lines":[42,43]},"content":"docker 安装","children":[]},{"type":"heading","depth":3,"payload":{"lines":[43,44]},"content":"docker 基本用法","children":[]},{"type":"heading","depth":3,"payload":{"lines":[44,45]},"content":"docker 镜像结构","children":[]},{"type":"heading","depth":3,"payload":{"lines":[45,46]},"content":"docker 镜像构建","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[47,48]},"content":"Kubernetes","children":[]},{"type":"heading","depth":2,"payload":{"lines":[48,49]},"content":"Prometheus","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[50,51]},"content":"软件工程","children":[{"type":"heading","depth":2,"payload":{"lines":[51,52]},"content":"12因素应用","children":[{"type":"heading","depth":3,"payload":{"lines":[52,53]},"content":"基准代码","children":[]},{"type":"heading","depth":3,"payload":{"lines":[53,54]},"content":"依赖","children":[]},{"type":"heading","depth":3,"payload":{"lines":[54,55]},"content":"配置","children":[]},{"type":"heading","depth":3,"payload":{"lines":[55,56]},"content":"后端服务","children":[]},{"type":"heading","depth":3,"payload":{"lines":[56,57]},"content":"构建、发布、运行","children":[]},{"type":"heading","depth":3,"payload":{"lines":[57,58]},"content":"进程","children":[]},{"type":"heading","depth":3,"payload":{"lines":[58,59]},"content":"端口绑定","children":[]},{"type":"heading","depth":3,"payload":{"lines":[59,60]},"content":"并发","children":[]},{"type":"heading","depth":3,"payload":{"lines":[60,61]},"content":"易处理","children":[]},{"type":"heading","depth":3,"payload":{"lines":[61,62]},"content":"开发环境与线上环境等价","children":[]},{"type":"heading","depth":3,"payload":{"lines":[62,63]},"content":"日志","children":[]},{"type":"heading","depth":3,"payload":{"lines":[63,64]},"content":"管理进程","children":[]}]}]},{"type":"heading","depth":1,"payload":{"lines":[66,67]},"content":"设计模式（23种）","children":[{"type":"heading","depth":2,"payload":{"lines":[67,68]},"content":"行为型模式（11种）","children":[{"type":"heading","depth":3,"payload":{"lines":[68,69]},"content":"责任链模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[69,70]},"content":"命令模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[70,71]},"content":"迭代器模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[71,72]},"content":"中介者模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[72,73]},"content":"备忘录模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[73,74]},"content":"观察者模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[74,75]},"content":"状态模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[75,76]},"content":"策略模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[76,77]},"content":"模板方法模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[77,78]},"content":"访问者模式","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[79,80]},"content":"创建型模式（5种）","children":[{"type":"heading","depth":3,"payload":{"lines":[80,81]},"content":"单例模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[81,82]},"content":"工厂方法模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[82,83]},"content":"抽象工厂模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[83,84]},"content":"建造者模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[84,85]},"content":"原型模式","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[86,87]},"content":"结构型模式（7种）","children":[{"type":"heading","depth":3,"payload":{"lines":[87,88]},"content":"适配器模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[88,89]},"content":"桥接模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[89,90]},"content":"组合模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[90,91]},"content":"装饰模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[91,92]},"content":"外观模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[92,93]},"content":"享元模式","children":[]},{"type":"heading","depth":3,"payload":{"lines":[93,94]},"content":"代理模式","children":[]}]}]}]},{})</script>
+</body>
+</html>

@@ -1,17 +1,17 @@
-import { viteBundler } from '@vuepress/bundler-vite'
+import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
-import { removePwaPlugin } from '@vuepress/plugin-remove-pwa';
-import { getDirname, path } from '@vuepress/utils'
-import { redirectPlugin } from '@vuepress/plugin-redirect';
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { removePwaPlugin } from "@vuepress/plugin-remove-pwa";
+import { getDirname, path } from "@vuepress/utils";
+import { redirectPlugin } from "@vuepress/plugin-redirect";
 
-const __dirname = getDirname(import.meta.url)
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   head: [
-    ['script', { src: '/js/snowfall.js', async: true }],
-    ['script', { src: '/js/baidu-analytics.js', async: true }]
+    // ['script', { src: '/js/snowfall.js', async: true }],
+    ["script", { src: "/js/baidu-analytics.js", async: true }],
   ],
   base: "/",
 
@@ -20,27 +20,27 @@ export default defineUserConfig({
   description: "",
 
   locales: {
-    '/': {
-      lang: 'zh-CN'
+    "/": {
+      lang: "zh-CN",
     },
-    '/en/': {
-      lang: 'en-US'
+    "/en/": {
+      lang: "en-US",
     },
   },
-  
+
   theme,
   plugins: [
     registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components')
+      componentsDir: path.resolve(__dirname, "./components"),
     }),
-    removePwaPlugin({
-    }),
+    removePwaPlugin({}),
     redirectPlugin({
       config: {
-        '/SKIP-Docs/1-introduction.html': '/projects/SKIP-Docs/',
-        '/projects/SKIP-Docs/002-xiaomi.html': '/projects/SKIP-Docs/xiaomi.html'
-      }
-    })
+        "/SKIP-Docs/1-introduction.html": "/projects/SKIP-Docs/",
+        "/projects/SKIP-Docs/002-xiaomi.html":
+          "/projects/SKIP-Docs/xiaomi.html",
+      },
+    }),
   ],
 
   // Enable it with pwa

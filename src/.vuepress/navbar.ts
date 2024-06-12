@@ -7,7 +7,6 @@ export default navbar([
   "/cloud-native/",
   "/design-pattern/",
   "/software-engineering/",
-  "/algorithm/",
   "/reading/",
   {
     text: "站外链接",
@@ -19,16 +18,12 @@ export default navbar([
       },
       {
         text: "Kotlin",
-        link: "https://play.kotlinlang.org"
+        link: "https://play.kotlinlang.org",
       },
       {
         text: "Mermaid",
-        link: "https://mermaid.live/edit"
+        link: "https://mermaid.live/edit",
       },
-      {
-        text: "NodeJS全栈",
-        link: "https://guoxicheng.top/html/js-full-stack.html"
-      }
-    ]
-  }
+    ],
+  },
 ]);

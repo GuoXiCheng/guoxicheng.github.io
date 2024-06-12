@@ -2,7 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/en/projects/",
-  "/en/algorithm/",
   {
     text: "External link",
     icon: "code",
@@ -13,16 +12,12 @@ export default navbar([
       },
       {
         text: "Kotlin",
-        link: "https://play.kotlinlang.org"
+        link: "https://play.kotlinlang.org",
       },
       {
         text: "Mermaid",
-        link: "https://mermaid.live/edit"
+        link: "https://mermaid.live/edit",
       },
-      {
-        text: "NodeJS Full Stack",
-        link: "https://guoxicheng.top/html/js-full-stack.html"
-      }
-    ]
-  }
+    ],
+  },
 ]);

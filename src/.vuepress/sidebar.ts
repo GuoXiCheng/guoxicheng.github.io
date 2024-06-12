@@ -7,7 +7,6 @@ export default sidebar({
   "/cloud-native": "structure",
   "/design-pattern": "structure",
   "/develop": "structure",
-  "/algorithm": "structure",
   "/article": "structure",
   "/software-engineering": "structure",
 });

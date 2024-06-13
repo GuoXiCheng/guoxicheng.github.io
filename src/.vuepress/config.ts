@@ -4,7 +4,6 @@ import theme from "./theme.js";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { removePwaPlugin } from "@vuepress/plugin-remove-pwa";
 import { getDirname, path } from "@vuepress/utils";
-import { redirectPlugin } from "@vuepress/plugin-redirect";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -19,14 +18,14 @@ export default defineUserConfig({
   title: "Guo's Page",
   description: "",
 
-  locales: {
-    "/": {
-      lang: "zh-CN",
-    },
-    "/en/": {
-      lang: "en-US",
-    },
-  },
+  // locales: {
+  //   "/": {
+  //     lang: "zh-CN",
+  //   },
+  //   "/en/": {
+  //     lang: "en-US",
+  //   },
+  // },
 
   theme,
   plugins: [
@@ -34,13 +33,6 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
     removePwaPlugin({}),
-    redirectPlugin({
-      config: {
-        "/SKIP-Docs/1-introduction.html": "/projects/SKIP-Docs/",
-        "/projects/SKIP-Docs/002-xiaomi.html":
-          "/projects/SKIP-Docs/xiaomi.html",
-      },
-    }),
   ],
 
   // Enable it with pwa

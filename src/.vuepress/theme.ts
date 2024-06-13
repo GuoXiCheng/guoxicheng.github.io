@@ -1,9 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
-import navbarEn from "./navbar-en.js";
 import sidebar from "./sidebar.js";
 import { getDirname, path } from "@vuepress/utils";
-import sidebarEn from "./sidebar-en.js";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -17,7 +15,10 @@ export default hopeTheme({
   editLink: false,
   pageInfo: ["Date", "Word", "Tag"],
 
-  iconAssets: ["fontawesome-with-brands", "//at.alicdn.com/t/c/font_4381716_dtn01hmwmvf.css"],
+  iconAssets: [
+    "fontawesome-with-brands",
+    "//at.alicdn.com/t/c/font_4381716_dtn01hmwmvf.css",
+  ],
 
   logo: "/logo.png",
 
@@ -27,28 +28,29 @@ export default hopeTheme({
 
   docsBranch: "master",
 
-  locales: {
-    '/': {
-      navbar: navbar,
-      sidebar: sidebar
-    },
-    '/en/': {
-      navbar: navbarEn,
-      sidebar: sidebarEn
-    },
-  },
+  sidebar,
+  navbar,
+  // locales: {
+  //   '/': {
+  //     navbar: navbar,
+  //     sidebar: sidebar
+  //   },
+  //   '/en/': {
+  //     navbar: navbarEn,
+  //     sidebar: sidebarEn
+  //   },
+  // },
 
   sidebarSorter: "order",
   // sidebar: "heading",
 
-  footer: "Made With <a href='https://github.com/vuepress-theme-hope/vuepress-theme-hope' target='_blank'>vuepress-theme-hope</a> Theme <br/> Copyright © 2023-present GuoXiCheng",
+  footer:
+    "Made With <a href='https://github.com/vuepress-theme-hope/vuepress-theme-hope' target='_blank'>vuepress-theme-hope</a> Theme <br/> Copyright © 2023-present GuoXiCheng",
 
   displayFooter: true,
 
   encrypt: {
-    config: {
-
-    },
+    config: {},
   },
 
   // page meta
@@ -58,15 +60,15 @@ export default hopeTheme({
 
   plugins: {
     prismjs: {
-      light: "one-dark"
+      light: "one-dark",
     },
 
     comment: {
-      provider: 'Giscus',
-      repo: 'GuoXiCheng/guoxicheng.github.io',
-      repoId: 'MDEwOlJlcG9zaXRvcnkyNTQ1Nzk0ODc=',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDODyyTH84Cdco8',
+      provider: "Giscus",
+      repo: "GuoXiCheng/guoxicheng.github.io",
+      repoId: "MDEwOlJlcG9zaXRvcnkyNTQ1Nzk0ODc=",
+      category: "Announcements",
+      categoryId: "DIC_kwDODyyTH84Cdco8",
       strict: true,
       lazyLoading: true,
       reactionsEnabled: true,
@@ -118,7 +120,7 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true
+      vuePlayground: true,
     },
 
     pwa: {
@@ -174,8 +176,8 @@ export default hopeTheme({
     git: {
       contributors: false,
       updatedTime: true,
-      createdTime: true
+      createdTime: true,
     },
-    searchPro: true
+    searchPro: true,
   },
 });

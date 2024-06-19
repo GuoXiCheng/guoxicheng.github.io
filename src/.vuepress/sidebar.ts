@@ -7,5 +7,4 @@ export default sidebar({
   "/design-pattern": "structure",
   "/develop": "structure",
   "/article": "structure",
-  "/software-engineering": "structure",
 });

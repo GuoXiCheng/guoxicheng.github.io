@@ -5,7 +5,6 @@ export default navbar([
   "/develop/",
   "/cloud-native/",
   "/design-pattern/",
-  "/software-engineering/",
   "/reading/",
   {
     text: "站外链接",

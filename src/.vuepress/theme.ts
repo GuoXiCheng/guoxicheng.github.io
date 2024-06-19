@@ -59,10 +59,6 @@ export default hopeTheme({
   // },
 
   plugins: {
-    prismjs: {
-      light: "one-dark",
-    },
-
     comment: {
       provider: "Giscus",
       repo: "GuoXiCheng/guoxicheng.github.io",

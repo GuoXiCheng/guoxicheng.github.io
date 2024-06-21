@@ -2,25 +2,24 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/article/",
-  "/develop/",
-  "/cloud-native/",
-  "/design-pattern/",
   "/reading/",
+  "/develop/",
+  "/design-pattern/",
   {
     text: "站外链接",
     icon: "code",
     children: [
       {
-        text: "TypeScript",
-        link: "https://www.typescriptlang.org/play",
+        text: "SKIP",
+        link: "https://skip.guoxicheng.top",
       },
       {
-        text: "Kotlin",
-        link: "https://play.kotlinlang.org",
+        text: "TinyCRUD",
+        link: "https://tinycrud.guoxicheng.top",
       },
       {
-        text: "Mermaid",
-        link: "https://mermaid.live/edit",
+        text: "JSFullStack",
+        link: "https://js.guoxicheng.top",
       },
     ],
   },

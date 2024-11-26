@@ -1,3 +1,7 @@
+---
+date: 2023-11-29
+---
+
 # 制作 npm 第三方库
 
 ## 初始化项目
@@ -18,15 +22,15 @@ npm install --save-dev typescript @types/node
 
 ```json
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "module": "ESNext",
-        "target": "ES5",
-        "declaration": true, // 生成类型声明文件
-        "strict": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ES5",
+    "declaration": true, // 生成类型声明文件
+    "strict": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }
 ```
 
@@ -41,21 +45,21 @@ npm install --save-dev rollup @rollup/plugin-typescript
 ```javascript
 import typescript from "@rollup/plugin-typescript";
 
-export default {
-    input: "src/index.ts", // 入口文件
-    output: [
-        {
-            file: "dist/bundle.cjs.js", // CommonJS 格式的输出
-            format: "cjs",
-        },
-        {
-            file: "dist/bundle.esm.js", // ES 模块格式的输出
-            format: "esm",
-        },
-    ],
-    plugins: [
-        typescript(), // 使用 TypeScript 插件
-    ],
+module.exports = {
+  input: "src/index.ts", // 入口文件
+  output: [
+    {
+      file: "dist/bundle.cjs.js", // CommonJS 格式的输出
+      format: "cjs",
+    },
+    {
+      file: "dist/bundle.esm.js", // ES 模块格式的输出
+      format: "esm",
+    },
+  ],
+  plugins: [
+    typescript(), // 使用 TypeScript 插件
+  ],
 };
 ```
 
@@ -77,7 +81,7 @@ npm install --save-dev rollup-plugin-dts
     // ...
 
     "declaration": true,
-    "declarationDir": "./dist/types", // 指定类型声明文件的输出目录
+    "declarationDir": "./dist/types" // 指定类型声明文件的输出目录
     // ...
   }
 }
@@ -89,15 +93,15 @@ npm install --save-dev rollup-plugin-dts
 import dts from "rollup-plugin-dts";
 
 export default [
-    {
-      // ...
-    },
-    /* 单独生成声明文件 */
-    {
-        input: "dist/types/index.d.ts",
-        output: [{ file: "dist/index.d.ts", format: "es" }],
-        plugins: [dts()],
-    },
+  {
+    // ...
+  },
+  /* 单独生成声明文件 */
+  {
+    input: "dist/types/index.d.ts",
+    output: [{ file: "dist/index.d.ts", format: "es" }],
+    plugins: [dts()],
+  },
 ];
 ```
 
@@ -113,10 +117,10 @@ npm install --save-dev rimraf
 
 ```json
 {
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "npm run clean && rollup -c"
-    }
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c"
+  }
 }
 ```
 
@@ -132,28 +136,29 @@ npm install --save-dev jest ts-jest @types/jest
 
 ```javascript
 export default {
-    testTimeout: 30000, // 设置测试超时时间
-    preset: "ts-jest",
-    testEnvironment: "node",
-    collectCoverage: true, // 开启测试覆盖率
-    coverageDirectory: "coverage", // 指定覆盖率报告输出目录
-    collectCoverageFrom: [ // 指定需要收集覆盖率的文件
-        "src/**/*.ts", // 包括 src 目录下所有的 TypeScript 文件
-        "!src/**/*.d.ts", // 排除 TypeScript 声明文件
-        "!src/__tests__/**/*.ts"
-    ],
-    testMatch: ["<rootDir>/src/__tests__/*.test.ts"], // 指定测试文件的匹配规则
-    testPathIgnorePatterns: [] // 指定需要忽略的测试文件
-}
+  testTimeout: 30000, // 设置测试超时时间
+  preset: "ts-jest",
+  testEnvironment: "node",
+  collectCoverage: true, // 开启测试覆盖率
+  coverageDirectory: "coverage", // 指定覆盖率报告输出目录
+  collectCoverageFrom: [
+    // 指定需要收集覆盖率的文件
+    "src/**/*.ts", // 包括 src 目录下所有的 TypeScript 文件
+    "!src/**/*.d.ts", // 排除 TypeScript 声明文件
+    "!src/__tests__/**/*.ts",
+  ],
+  testMatch: ["<rootDir>/src/__tests__/*.test.ts"], // 指定测试文件的匹配规则
+  testPathIgnorePatterns: [], // 指定需要忽略的测试文件
+};
 ```
 
 在`src/__tests__`目录下创建测试用例
 
 ```ts
 // example.test.ts
-import { yourFunction } from './yourModule';
+import { yourFunction } from "./yourModule";
 
-test('description of your test', () => {
+test("description of your test", () => {
   expect(yourFunction()).toBe(/* expected result */);
 });
 ```
@@ -162,9 +167,9 @@ test('description of your test', () => {
 
 ```json
 {
-    "scripts": {
-        "test": "jest --coverage"
-    }
+  "scripts": {
+    "test": "jest --coverage"
+  }
 }
 ```
 
@@ -173,8 +178,9 @@ test('description of your test', () => {
 ## 构建 npm 库
 
 首先确保在`package.json`文件中添加
-- `"main": "dist/bundle.cjs.js"`指向CommonJS版本的入口点。
-- `"module": "dist/bundle.esm.js"`指向ES模块版本的入口点。
+
+- `"main": "dist/bundle.cjs.js"`指向 CommonJS 版本的入口点。
+- `"module": "dist/bundle.esm.js"`指向 ES 模块版本的入口点。
 - `"types": "dist/index.d.ts"`指向类型声明文件。
 - `"files": ["dist"]`指定发布的文件。
 
@@ -215,13 +221,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 18
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install dependencies
         run: npm install
 
       - name: Build package
-        run: npm run build 
+        run: npm run build
 
       - name: Publish to npm
         run: npm publish

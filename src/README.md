@@ -16,6 +16,12 @@ actions:
     type: primary
 
 highlights:
+  - header: 基金历史净值分位数小程序
+    description: 快捷查询基金历史净值分位数
+    bgImage: /assets/image/bg/2-light.svg
+    bgImageDark: /assets/image/bg/2-dark.svg
+    image: /assets/image/quantile-of-net-worth.png
+    imageDark: /assets/image/quantile-of-net-worth-dark.jpg
   - header: <a href="https://js.guoxicheng.top" target="_blank">JSFullStack</a>
     description: JavaScript 全栈知识体系<br/> <br/><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/GuoXiCheng/JSFullStack" /> <img alt="License" src="https://img.shields.io/github/license/GuoXiCheng/JSFullStack" /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/GuoXiCheng/JSFullStack/deploy.yml" /> <a href="https://github.com/GuoXiCheng/JSFullStack" target="_blank"><img alt="Github JSFullStack" src="https://img.shields.io/badge/GitHub-JSFullStack-blue.svg" /></a>
     bgImage: /assets/image/bg/2-light.svg

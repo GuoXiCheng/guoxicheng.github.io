@@ -9,7 +9,7 @@ const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   head: [
-    // ['script', { src: '/js/snowfall.js', async: true }],
+    ["script", { src: "/js/snowfall.js", async: true }],
     ["script", { src: "/js/baidu-analytics.js", async: true }],
   ],
   base: "/",

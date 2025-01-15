@@ -2,6 +2,9 @@
 window.snowfallInitialized = window.snowfallInitialized || false;
 // snowfall.js
 (function () {
+    const month = new Date().getMonth();
+    if (month < 11 && month > 1) return; // 仅在 12 月到 2 月显示雪花
+
     if (window.snowfallInitialized) return;
     window.snowfallInitialized = true;
 

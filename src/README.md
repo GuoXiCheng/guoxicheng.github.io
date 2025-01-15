@@ -16,7 +16,7 @@ actions:
     type: primary
 
 highlights:
-  - header: 基金历史净值分位数小程序
+  - header: <a href="https://fund.guoxicheng.top/" target="_blank">基金历史净值分位数小程序</a>
     description: 快捷查询基金历史净值分位数
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg

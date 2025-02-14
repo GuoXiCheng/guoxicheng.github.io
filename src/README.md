@@ -17,7 +17,7 @@ actions:
 
 highlights:
   - header: <a href="https://fund.guoxicheng.top/" target="_blank">基金净值分位微信小程序</a>
-    description: 微信搜索小程序：小诚净值分位助手
+    description: <p>微信搜索小程序：小诚净值分位助手</p><p>微信搜索公众号：小诚爱养基</p>
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg
     image: /assets/image/quantile-of-net-worth.png

@@ -21,6 +21,10 @@ export default navbar([
         text: "JSFullStack",
         link: "https://js.guoxicheng.top",
       },
+      {
+        text: "净值分位",
+        link: "https://fund.guoxicheng.top",
+      },
     ],
   },
 ]);

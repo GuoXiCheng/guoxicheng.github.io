@@ -16,8 +16,13 @@ actions:
     type: primary
 
 highlights:
+  - header: <a href="https://book.guoxicheng.top/" target="_blank">我的书架</a>
+    description: <p>我的读书笔记和推荐书单</p>
+    bgImage: /assets/image/bg/2-light.svg
+    bgImageDark: /assets/image/bg/2-dark.svg
+    image: /assets/image/book-shelf.png
   - header: <a href="https://fund.guoxicheng.top/" target="_blank">基金净值分位微信小程序</a>
-    description: <p>微信搜索小程序：小诚净值分位助手</p><p>微信搜索公众号：小诚爱养基</p>
+    description: 查询指数基金百分位数，低位买入，高位卖出
     bgImage: /assets/image/bg/2-light.svg
     bgImageDark: /assets/image/bg/2-dark.svg
     image: /assets/image/quantile-of-net-worth.png

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.13" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.48" />
+    <style>
+      html {
+        background: var(--bg-color, #fff);
+      }
+
+      html[data-theme="dark"] {
+        background: var(--bg-color, #1d1e1f);
+      }
+
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <meta property="og:url" content="https://guoxicheng.top/random.html"><meta property="og:site_name" content="Guo's Page"><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2026-03-17T11:24:47.000Z"><meta property="article:modified_time" content="2026-03-17T11:24:47.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"","image":[""],"dateModified":"2026-03-17T11:24:47.000Z","author":[]}</script><script src="/js/snowfall.js" async></script><script src="/js/baidu-analytics.js" async></script><title>Guo's Page</title><meta name="description" content="">
+    <link rel="preload" href="/assets/style-Bva102rF.css" as="style"><link rel="stylesheet" href="/assets/style-Bva102rF.css">
+    <link rel="modulepreload" href="/assets/app-CKLDHUpF.js"><link rel="modulepreload" href="/assets/random.html-Bwup5jfs.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><div class="theme-container no-navbar no-sidebar external-link-icon has-toc"><!----><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!----><ul class="vp-sidebar-links"></ul><!----></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!----><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><!----></h1><!----><hr></div><!----><!----><div class="theme-hope-content"><section class="random-page" data-v-1d5b4882><div class="hero-card" data-v-1d5b4882><div class="hero-copy" data-v-1d5b4882><p class="eyebrow" data-v-1d5b4882>Random Generator</p><h1 data-v-1d5b4882>随机数生成器</h1><p class="description" data-v-1d5b4882> 输入最小值、最大值和生成行数后，即可批量生成随机数据。点击任意表格行，会从该行开始依次朗读每个单元格，并自动继续朗读后续行。 </p></div><div class="panel" data-v-1d5b4882><div class="input-grid" data-v-1d5b4882><label class="field" data-v-1d5b4882><span data-v-1d5b4882>最小值</span><input value="1" type="number" inputmode="numeric" step="1" placeholder="例如 1" data-v-1d5b4882></label><label class="field" data-v-1d5b4882><span data-v-1d5b4882>最大值</span><input value="100" type="number" inputmode="numeric" step="1" placeholder="例如 100" data-v-1d5b4882></label><label class="field" data-v-1d5b4882><span data-v-1d5b4882>生成行数</span><input value="100" type="number" inputmode="numeric" step="1" min="1" placeholder="默认 100" data-v-1d5b4882></label></div><div class="actions" data-v-1d5b4882><button class="primary-button" data-v-1d5b4882>生成数据</button><button class="secondary-button" disabled data-v-1d5b4882>播放</button><button class="secondary-button" disabled data-v-1d5b4882>暂停</button></div><label class="rate-control" for="speech-rate" data-v-1d5b4882><div class="rate-header" data-v-1d5b4882><span data-v-1d5b4882>朗读语速</span><strong data-v-1d5b4882>1.0x</strong></div><input id="speech-rate" value="1" type="range" min="0.5" max="2" step="0.1" data-v-1d5b4882></label><div class="status-stack" data-v-1d5b4882><p class="status-line" aria-live="polite" data-v-1d5b4882>当前浏览器不支持语音朗读，请使用支持 SpeechSynthesis 的浏览器。</p><p class="status-note" data-v-1d5b4882> 若最小值大于最大值，生成时会自动交换范围。 <!--[-->当前浏览器不支持语音朗读功能。<!--]--></p></div></div></div><div class="summary-grid" data-v-1d5b4882><article class="summary-card" data-v-1d5b4882><span class="summary-label" data-v-1d5b4882>当前区间</span><strong data-v-1d5b4882>1 ~ 100</strong></article><article class="summary-card" data-v-1d5b4882><span class="summary-label" data-v-1d5b4882>表格行数</span><strong data-v-1d5b4882>0 行</strong></article><article class="summary-card" data-v-1d5b4882><span class="summary-label" data-v-1d5b4882>朗读定位</span><strong data-v-1d5b4882>未开始</strong></article></div><div class="table-card" data-v-1d5b4882><div class="empty-state" data-v-1d5b4882><h2 data-v-1d5b4882>还没有生成数据</h2><p data-v-1d5b4882>默认生成行数为 100。输入范围后点击“生成数据”，再点击任意一行即可开始朗读。</p></div></div></section></div><!----><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><!----><!----></div></footer><!----><div id="vp-comment" class="giscus-wrapper input-top" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100"><circle cx="28" cy="75" r="11" fill="currentColor"><animate attributeName="fill-opacity" begin="0s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></circle><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 47a28 28 0 0 1 28 28"><animate attributeName="stroke-opacity" begin="0.1s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 25a50 50 0 0 1 50 50"><animate attributeName="stroke-opacity" begin="0.2s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path></svg></div><!----><!--]--></main><!--]--><!----></div><!--]--><!--[--><!----><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-CKLDHUpF.js" defer></script>
+  </body>
+</html>
